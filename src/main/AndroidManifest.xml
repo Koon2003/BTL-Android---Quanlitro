@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Thêm các quyền truy cập vị trí -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".TimKiem_PhongTro_TheoBoLoc_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_TienNuoc_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_TienDien_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_TienPhongConLai_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_TienCocPhong_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_HoSo_NguoiThueTro_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_ThongTIn_TaiKhoan_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThi_ThongTin_PhongTro_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DatLichXemPhongTro_DaHuy_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DatLichXemPhongTro_DaDuyet_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinTaiKhoan_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DoiMatKhau_TaiKhoan_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DangKi_TaiKhoan_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienNuoc_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienDien_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_TienNuoc_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_TienDien_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Them_TienDien_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Them_TienNuoc_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Khach_DaCheck_HoSo_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Check_HoSoThueTro_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienPhongConLai_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienCocPhong_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Them_TienPhongConLai_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_TienCocPhong_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Them_TienCocPhong_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LichHenXemPhong_DaHuy_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LichHenXemPhong_DaDuyet_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Them_HoSoNguoiThueTro_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_HoSoNguoiThueTro_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Huy_DatLichXemPhong_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LichHenXemPhong_DangChoDuyet_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ChiTietPhongTro_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_TaiKhoan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Them_TaiKhoan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_PhongTro"
+            android:exported="false" />
+        <activity
+            android:name=".Them_PhongTro_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_DatLichXemPhongTro_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PhongTro_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienNuoc_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangCaNhan_NguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sua_TienPhongConLai_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DatLichXemPhongTro_ChoDuyet_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienCocPhong_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienPhongConLai_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TienDien_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TaiKhoan_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HoSo_NguoiThueTro_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

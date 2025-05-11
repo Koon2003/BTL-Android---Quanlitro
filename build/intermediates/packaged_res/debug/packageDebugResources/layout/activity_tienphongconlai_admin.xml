@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:text="QUẢN LÍ THÔNG TIN TIỀN Đóng còn lại"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:background="#F80053"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:layout_height="80dp"></TextView>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Phòng"
+        android:background="@drawable/add"
+        android:layout_gravity="center" />
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/tendn"></TextView>
+    <!-- ScrollView chứa nội dung chính -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Slide ảnh sử dụng ViewPager2 -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImages"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Tên phòng trọ -->
+            <TextView
+                android:id="@+id/tenphong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên phòng trọ"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá: "
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginBottom="10dp"/>
+            <!-- Giá tiền -->
+            <TextView
+                android:id="@+id/giatien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 3.000.000 VNĐ"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+            <!-- Diện tích -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diện tích: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/dientich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" m²"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô tả :"
+           android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Mô tả -->
+            <TextView
+                android:id="@+id/mota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Phòng trọ rộng rãi, thoáng mát, đầy đủ tiện nghi, gần trung tâm thành phố."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Nút đặt lịch xem phòng -->
+        </LinearLayout>
+            <Button
+                android:id="@+id/datlichxemphong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFEB3B"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/datlich"
+                android:text="Đặt lịch xem phòng ngay"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Các TextView ẩn (nếu cần) -->
+
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+</RelativeLayout>

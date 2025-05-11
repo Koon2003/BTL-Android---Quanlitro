@@ -1,0 +1,3 @@
+com.example.appquanlitro.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

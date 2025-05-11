@@ -1,0 +1,5 @@
+com.example.appquanlitro.test.app-core-1.6.1-0 C:\Users\Admin\.gradle\caches\8.9\transforms\3bb8abf0ed556ba0d0d46b0d5c3152f5\transformed\core-1.6.1\res
+com.example.appquanlitro.test.app-androidTest-1 C:\Users\Admin\AndroidStudioProjects\Appquanlitro\app\build\generated\res\resValues\androidTest\debug
+com.example.appquanlitro.test.app-mergeDebugAndroidTestResources-2 C:\Users\Admin\AndroidStudioProjects\Appquanlitro\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.appquanlitro.test.app-mergeDebugAndroidTestResources-3 C:\Users\Admin\AndroidStudioProjects\Appquanlitro\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.appquanlitro.test.app-debugAndroidTest-4 C:\Users\Admin\AndroidStudioProjects\Appquanlitro\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

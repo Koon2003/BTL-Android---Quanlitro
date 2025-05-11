@@ -1,0 +1,646 @@
+[
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tiendien_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tiendien_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_hoso.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_hoso.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_user.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/user.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tienphongconlai_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tienphongconlai_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_khach_daxacnhan_hoso_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_khach_daxacnhan_hoso_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tkbe.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tkbe.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_add.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/add.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tn.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tn.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tiendien_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tiendien_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_datlichxemphong_dahuy_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_datlichxemphong_dahuy_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_datlichxemphong_dangchoduyet_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_datlichxemphong_dangchoduyet_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_tiencocphong.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_tiencocphong.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tiencocphong_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tiencocphong_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_cccd.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/cccd.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tcbe.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tcbe.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_u.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/u.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_huylichhen.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/huylichhen.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_datlichxemphongtro_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_datlichxemphongtro_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_timkiem_phongtro_theoboloc_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_timkiem_phongtro_theoboloc_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tiendien_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tiendien_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tiennuoc_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tiennuoc_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_phong.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/phong.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_dx.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/dx.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_khach_dacheck_hosothuetro_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_khach_dacheck_hosothuetro_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_hoso.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/hoso.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_huy_datlichxemphong_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_huy_datlichxemphong_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tro1nguoi.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tro1nguoi.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_hosonguoithuetro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_hosonguoithuetro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_tiennuoc.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_tiennuoc.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_taikhoan.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_taikhoan.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_thongtin_phongtro_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_thongtin_phongtro_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_tienphongconlai_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_tienphongconlai_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_listview.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/listview.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sl3.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sl3.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tt.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tt.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_tiencocphong.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_tiencocphong.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_lichhenxemphong_daduyet_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_lichhenxemphong_daduyet_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_doithongtinnguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_doithongtinnguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_tienphongconlai.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_tienphongconlai.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_dangxuat.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/dangxuat.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_b.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/b.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_dien.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/dien.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_lxp.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/lxp.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_taikhoan.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_taikhoan.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_hoso_nguoithuetro_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_hoso_nguoithuetro_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sl5.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sl5.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_ce.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/ce.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sl2.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sl2.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_tiendien.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_tiendien.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_hosonguoithuetro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_hosonguoithuetro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_lichdaduyet.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/lichdaduyet.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_item_2loai_tienphong.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/item_2loai_tienphong.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tienphongconlai_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tienphongconlai_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_lichenxemphong_dangchoduyet_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_lichenxemphong_dangchoduyet_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tien.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tien.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_login.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/login.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_huylichxemphong_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_huylichxemphong_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_taikhoan.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_taikhoan.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_tiendien.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_tiendien.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_datlichxemphong_daduyet_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_datlichxemphong_daduyet_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_datlichxemphongtro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_datlichxemphongtro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_logout.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/logout.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_datlichxemphongtro_dahuy_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_datlichxemphongtro_dahuy_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_hstt.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/hstt.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_trangchu_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_trangchu_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_nd.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/nd.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_phongtro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_phongtro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tiencocphong_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tiencocphong_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tk.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tk.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tiennuoc_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tiennuoc_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_tiennuoc_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_tiennuoc_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_trodexuat.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_trodexuat.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_item_anh_slide_chitietphongtro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/item_anh_slide_chitietphongtro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_phongtro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_phongtro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tiencoc.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tiencoc.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tro3nguoi.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tro3nguoi.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sdt.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sdt.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_loc.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/loc.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_huylich.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/huylich.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_vitri.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/vitri.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_edit.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/edit.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_img.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/img.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tiendien_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tiendien_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_nuoc.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/nuoc.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_td.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/td.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_taikhoan_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_taikhoan_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_admin.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/admin.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_lichhenxemphong_dahuy_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_lichhenxemphong_dahuy_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sl6.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sl6.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_phongtro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_phongtro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tiencocphong_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tiencocphong_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_lichhuy.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/lichhuy.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hosonguoithuetro_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hosonguoithuetro_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_xoa.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/xoa.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tiencocnlai.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tiencocnlai.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_ns.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/ns.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_slide.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/slide.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_trang_canhan_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_trang_canhan_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_thongtin_taikhoan_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_thongtin_taikhoan_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tc.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tc.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_quantri.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/quantri.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_bill.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/bill.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_resume.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/resume.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_mk.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/mk.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_doimatkhau_taikhoan_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_doimatkhau_taikhoan_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.appquanlitro.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tienphongconlai_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tienphongconlai_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tiennuoc_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tiennuoc_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_chi_tiet_phong_tro.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_chi_tiet_phong_tro.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/xml_backup_rules.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_tiencocphong_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_tiencocphong_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_nguoidung.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/nguoidung.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/raw_review.mp4.flat",
+        "source": "com.example.appquanlitro.app-main-38:/raw/review.mp4"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_check_hosothuetro_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_check_hosothuetro_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tiencocphong_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tiencocphong_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_datlich_xemphongtro_daduyet_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_datlich_xemphongtro_daduyet_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_lichchoduyet.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/lichchoduyet.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_datlich.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/datlich.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_tienphongconlai_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_tienphongconlai_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_phongtro_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_phongtro_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_dlxp.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/dlxp.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_hosonguoithuetro_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_hosonguoithuetro_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tro2nguoi.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tro2nguoi.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_cocphong.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/cocphong.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_datlichxemphongtro_choduyet_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_datlichxemphongtro_choduyet_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_check_hoso_thuetro_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_check_hoso_thuetro_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_hlxp.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/hlxp.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_login.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_dangki_taikhoan_nguoidung.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_dangki_taikhoan_nguoidung.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_trangchu_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_trangchu_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_main.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/main.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sl4.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sl4.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tdn.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tdn.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_them_tienphongconlai.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_them_tienphongconlai.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_edittext.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/edittext.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_thongtin_taikhoan_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_thongtin_taikhoan_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_img_1.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/img_1.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_dialog_henngayxemphong.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/dialog_henngayxemphong.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_age.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/age.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_cancel.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/cancel.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_sl1.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/sl1.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_hienthi_tiendien_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_hienthi_tiendien_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_activity_sua_tiennuoc.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/activity_sua_tiennuoc.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_tkto.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/tkto.png"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/layout_ds_tiennuoc_admin.xml.flat",
+        "source": "com.example.appquanlitro.app-main-38:/layout/ds_tiennuoc_admin.xml"
+    },
+    {
+        "merged": "com.example.appquanlitro.app-debug-36:/drawable_t.png.flat",
+        "source": "com.example.appquanlitro.app-main-38:/drawable/t.png"
+    }
+]
