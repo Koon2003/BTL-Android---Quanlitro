@@ -96,7 +96,7 @@ public class Login_Activity extends AppCompatActivity {
         cursor.close(); // Đóng cursor để tránh rò rỉ bộ nhớ
         return isValid;
     }
-
+    /*
     // Hàm lấy quyền người dùng
     private String getUserQuyen(String username) {
         String quyen = "";
@@ -116,7 +116,7 @@ public class Login_Activity extends AppCompatActivity {
         }
         cursor.close(); // Đóng cursor
         return quyen;
-    }
+    } */
 
     // Hàm khởi động timer tự động đăng xuất
     private void startAutoLogoutTimer() {
@@ -141,11 +141,5 @@ public class Login_Activity extends AppCompatActivity {
         };
 
         handler.postDelayed(timeoutRunnable, TIMEOUT_DURATION); // Đặt thời gian để đăng xuất
-    }
-
-    @Override
-    public void onUserInteraction() {
-        super.onUserInteraction();
-        startAutoLogoutTimer(); // Reset timer nếu có tương tác của người dùng
     }
 }
