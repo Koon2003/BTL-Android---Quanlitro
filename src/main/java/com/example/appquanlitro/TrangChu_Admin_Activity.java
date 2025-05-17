@@ -163,6 +163,18 @@ public class TrangChu_Admin_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        btntiennuoc.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(TrangChu_Admin_Activity.this, TienNuoc_NguoiDung_Activity.class);
+//
+//                intent.putExtra("tendn", "bacxg");
+//                // Khởi chạy Activity
+//                startActivity(intent);
+//            }
+//        });
+
         btndangxuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
