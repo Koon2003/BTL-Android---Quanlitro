@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08cb940d-18be-4c55-aa69-bccc55fdf97a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_Admin_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +36,13 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/backup/BTL-Android---Quanlitro/src/main/java/com/example/appquanlitro"
+    "last_opened_file_path": "C:/Users/Admin/Desktop/backup/BTL-Android---Quanlitro/src/main/res/layout"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\backup\BTL-Android---Quanlitro\src\main\java\com\example\appquanlitro" />
       <recent name="C:\Users\Admin\Desktop\backup\BTL-Android---Quanlitro\src\main\res\layout" />
+      <recent name="C:\Users\Admin\Desktop\backup\BTL-Android---Quanlitro\src\main\java\com\example\appquanlitro" />
       <recent name="C:\Users\Admin\Desktop\backup\BTL-Android---Quanlitro\src\main\res\drawable" />
       <recent name="C:\Users\Admin\Desktop\backup\BTL-Android---Quanlitro\src\main\java\com\example\appquanlitro\databases" />
     </key>
