@@ -44,7 +44,7 @@ public class TienCocPhong_Admin_Activity extends AppCompatActivity {
         // Xử lý sự kiện click item trong ListView
         lv.setOnItemClickListener((parent, view, position, id) -> {
             TienCocPhong selectedRoom = List.get(position);
-            Intent intent = new Intent(TienCocPhong_Admin_Activity.this, HienThi_TienCocPhong_Admin_Activity.class);
+            Intent intent = new Intent(TienCocPhong_Admin_Activity.this, Sua_TienCocPhong_Activity.class);
 
             // Truyền dữ liệu qua Intent
             intent.putExtra("maidcoc", selectedRoom.getMaidcoc());

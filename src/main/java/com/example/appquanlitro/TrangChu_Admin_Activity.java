@@ -128,6 +128,57 @@ public class TrangChu_Admin_Activity extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+//        btntienphong.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // Tạo Dialog
+//                // Tạo Dialog
+//                Dialog dialog = new Dialog(TrangCaNhan_NguoiDung_Activity.this);
+//                dialog.setContentView(R.layout.item_2loai_tienphong); // Sử dụng layout ds_tienphong
+//                dialog.setTitle("Chọn hành động");
+//
+//                // Thiết lập chiều rộng của Dialog bằng chiều rộng màn hình
+//                WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+//                Window window = dialog.getWindow();
+//                if (window != null) {
+//                    layoutParams.copyFrom(window.getAttributes());
+//                    // Thiết lập chiều rộng bằng chiều rộng màn hình
+//                    layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+//                    layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
+//                    window.setAttributes(layoutParams);
+//                }
+//                // Ánh xạ các nút trong Dialog
+//                ImageButton btntiendatcoc = dialog.findViewById(R.id.btntiencoc);
+//                ImageButton btntiennoptiep = dialog.findViewById(R.id.btntienconlai);
+//
+//                // Xử lý sự kiện khi ấn vào nút "Đặt cọc"
+//                btntiendatcoc.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent intent = new Intent(TrangCaNhan_NguoiDung_Activity.this, TienCocPhong_NguoiDung_Activity.class);
+//                        intent.putExtra("tendn", "bacxg"); // Truyền tendn sang
+//                        startActivity(intent);
+//                        dialog.dismiss(); // Đóng Dialog
+//                    }
+//                });
+//
+//// Xử lý sự kiện khi ấn vào nút "Nộp tiếp"
+//                btntiennoptiep.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent intent = new Intent(TrangCaNhan_NguoiDung_Activity.this, TienPhongConLai_NguoiDung_Activity.class);
+//                        intent.putExtra("tendn", "bacxg"); // Truyền tendn sang
+//                        startActivity(intent);
+//                        dialog.dismiss(); // Đóng Dialog
+//                    }
+//                });
+//
+//                // Hiển thị Dialog
+//                dialog.show();
+//            }
+//        });
+
         btndangxuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
