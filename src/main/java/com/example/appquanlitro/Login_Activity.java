@@ -73,9 +73,14 @@ public class Login_Activity extends AppCompatActivity {
                     intent = new Intent(Login_Activity.this, TrangChu_Admin_Activity.class);
                     Toast.makeText(this, "Đăng nhập với quyền Admin", Toast.LENGTH_SHORT).show();
                 }  else {
-                    intent = new Intent(Login_Activity.this, TrangChu_NguoiDung_Activity.class);
-                    intent.putExtra("tendn", tendn); // Truyền tên đăng nhập
-                    Toast.makeText(this, "Đăng nhập với quyền User", Toast.LENGTH_SHORT).show();
+//                    intent = new Intent(Login_Activity.this, TrangChu_NguoiDung_Activity.class);
+//                    intent.putExtra("tendn", tendn); // Truyền tên đăng nhập
+//                    Toast.makeText(this, "Đăng nhập với quyền User", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(Login_Activity.this, TrangCaNhan_NguoiDung_Activity.class);
+
+                    intent.putExtra("tendn", tendn);
+                    startActivity(intent);
 
                 }
 
