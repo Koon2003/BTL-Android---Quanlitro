@@ -38,6 +38,8 @@ public class Database extends SQLiteOpenHelper {
 
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+
     }
 
     public void onCreate(SQLiteDatabase db) {
@@ -46,7 +48,142 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE IF NOT EXISTS hosothuetro (maid INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, hovaten TEXT,ngaysinh TEXT, cccd TEXT, quequan TEXT, sdt TEXT, id INTEGER, giatien TEXT, hinhthucthue TEXT, ngaybatdau TEXT, ngayketthuc TEXT, xacnhanhopdong TEXT,trangthai TEXT)");
         db.execSQL("CREATE TABLE IF NOT EXISTS tiencocphong (maidcoc INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT, hinhthuccoc TEXT, sotiendanopcoc TEXT, sotienconlai TEXT)");
         db.execSQL("CREATE TABLE IF NOT EXISTS tienphongconlai (maidtienconlai INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT, sotienconlai TEXT, trangthai TEXT)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS tiennuoc (idnuoc INTEGER PRIMARY KEY AUTOINCREMENT,  id INTEGER, dongtiennuocthangnam TEXT, sokhoitieuthu TEXT, giatien TEXT, tongtien TEXT, trangthai TEXT)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS phongtro(id INTEGER PRIMARY KEY AUTOINCREMENT, tenphong TEXT, dientich TEXT, mota TEXT, giatien TEXT, anh1Path TEXT, anh2Path TEXT, anh3Path TEXT, anh4Path TEXT, anh5Path TEXT)");
 
+    }
+    public Cursor GetData(String query, String[] params) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery(query, params);
+    }
+    public void QueryData(String query, String[] params) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL(query, params);
+    }
+
+
+
+    public int deletetienCocPhong(String tendn) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete("tiencocphong", "maidcoc = ?", new String[]{tendn});
+        db.close();
+        return rowsDeleted; // Trả về số hàng đã xóa
+    }
+    public int deletetienPhongConlai(String tendn) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete("tienphongconlai", "maidtienconlai = ?", new String[]{tendn});
+        db.close();
+        return rowsDeleted; // Trả về số hàng đã xóa
+    }
+
+    public int deletetienTienNuoc(String tendn) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete("tiendnuoc", "idnuoc = ?", new String[]{tendn});
+        db.close();
+        return rowsDeleted; // Trả về số hàng đã xóa
+    }
+    public String getTenPhongById(String idPhong) {
+        String tenPhong = "";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT tenphong FROM phongtro WHERE id = ?", new String[]{idPhong});
+
+        if (cursor.moveToFirst()) {
+            tenPhong = cursor.getString(0);
+        }
+        cursor.close();
+        db.close();
+
+        return tenPhong;
+    }
+
+
+    public boolean themTienCoc(String mahoso, String idPhong, String giaTien, String hovaten,
+                               String ngaySinh, String cccd, String sdt, String hinhThucCoc,
+                               String soTienDaCoc, String soTienConLai) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "INSERT INTO tiencocphong (mahoso, id, giatien, hovaten, ngaysinh, cccdnguoinop, sdt, hinhthuccoc, sotiendanopcoc, sotienconlai) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        SQLiteStatement statement = db.compileStatement(sql);
+
+        try {
+            db.beginTransaction(); // Bắt đầu transaction
+
+            // Bind giá trị vào statement
+            statement.bindString(1, mahoso);
+            statement.bindString(2, idPhong);
+            statement.bindString(3, giaTien);
+            statement.bindString(4, hovaten);
+            statement.bindString(5, ngaySinh);
+            statement.bindString(6, cccd);
+            statement.bindString(7, sdt);
+            statement.bindString(8, hinhThucCoc);
+            statement.bindString(9, soTienDaCoc);
+            statement.bindString(10, soTienConLai);
+
+            statement.executeInsert(); // Thực hiện chèn dữ liệu
+            db.setTransactionSuccessful(); // Đánh dấu transaction thành công
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            statement.close(); // Đóng statement
+            db.endTransaction(); // Kết thúc transaction
+            db.close(); // Đóng database
+        }
+    }
+
+    public boolean themTienNopPhongCOnlai(String mahoso, String idPhong, String giaTien, String hovaten,
+                                          String ngaySinh, String cccd, String sdt, String soTienConLai,String trangthai) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "INSERT INTO tienphongconlai (mahoso, id, giatien, hovaten, ngaysinh, cccdnguoinop, sdt,  sotienconlai,trangthai) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        SQLiteStatement statement = db.compileStatement(sql);
+
+        try {
+            db.beginTransaction(); // Bắt đầu transaction
+
+            // Bind giá trị vào statement
+            statement.bindString(1, mahoso);
+            statement.bindString(2, idPhong);
+            statement.bindString(3, giaTien);
+            statement.bindString(4, hovaten);
+            statement.bindString(5, ngaySinh);
+            statement.bindString(6, cccd);
+            statement.bindString(7, sdt);
+            statement.bindString(8, soTienConLai);
+            statement.bindString(9, trangthai);
+
+
+            statement.executeInsert(); // Thực hiện chèn dữ liệu
+            db.setTransactionSuccessful(); // Đánh dấu transaction thành công
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            statement.close(); // Đóng statement
+            db.endTransaction(); // Kết thúc transaction
+            db.close(); // Đóng database
+        }
+    }
+
+    public boolean capNhatTienCoc(String maidcoc, String mahoso, String idPhong, String giaTien, String hovaten, String ngaySinh, String cccd, String sdt, String hinhThucCoc, String soTienDaCoc, String soTienConLai) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("mahoso", mahoso);
+        values.put("id", idPhong);
+        values.put("giatien", giaTien);
+        values.put("hovaten", hovaten);
+        values.put("ngaysinh", ngaySinh);
+        values.put("cccdnguoinop", cccd);
+        values.put("sdt", sdt);
+        values.put("hinhthuccoc", hinhThucCoc);
+        values.put("sotiendanopcoc", soTienDaCoc);
+        values.put("sotienconlai", soTienConLai);
+
+        // Update row
+        int result = db.update("tiencocphong", values, "maidcoc = ?", new String[]{String.valueOf(maidcoc)});
+        db.close();
+        return result > 0; // Trả về true nếu cập nhật thành công
     }
 
 }

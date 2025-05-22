@@ -34,7 +34,6 @@ public class TienPhongConLai_Admin_Activity extends AppCompatActivity {
         database = new Database(this, "quanlitro.db", null, 1);
         database.QueryData("CREATE TABLE IF NOT EXISTS tienphongconlai (maidtienconlai INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT, sotienconlai TEXT, trangthai TEXT)");
 
-        // Tải dữ liệu từ database
         loadData();
 
         // Thiết lập sự kiện click cho nút thêm
@@ -43,22 +42,6 @@ public class TienPhongConLai_Admin_Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Xử lý sự kiện click item trong ListView
-        lv.setOnItemClickListener((parent, view, position, id) -> {
-            TienPhongConLai selectedRoom = list.get(position);
-            Intent intent = new Intent(TienPhongConLai_Admin_Activity.this, Sua_TienPhongConLai_Activity.class);
-            intent.putExtra("maidtienconlai", selectedRoom.getMaidtienconlai());
-            intent.putExtra("mahoso", selectedRoom.getMahoso());
-            intent.putExtra("id", selectedRoom.getId());
-            intent.putExtra("giatien", selectedRoom.getGiatien());
-            intent.putExtra("hovaten", selectedRoom.getHovaten());
-            intent.putExtra("ngaysinh", selectedRoom.getNgaysinh());
-            intent.putExtra("cccd", selectedRoom.getCccdnguoinop());
-            intent.putExtra("sdt", selectedRoom.getSdt());
-            intent.putExtra("sotienconlai", selectedRoom.getSotienconlaiphaidong());
-            intent.putExtra("trangthai", selectedRoom.getTrangthai());
-            startActivity(intent);
-        });
     }
 
     @Override

@@ -5,10 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08cb940d-18be-4c55-aa69-bccc55fdf97a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienCocPhong_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienCocPhong_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Login_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Login_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienNuoc_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienNuoc_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienPhongConLai_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienPhongConLai_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienNuoc_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienNuoc_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienPhongConLai_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienPhongConLai_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_Admin_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_NguoiDung_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Admin_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_Admin_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_NguoiDung_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_Admin_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_dangki_taikhoan_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_dangki_taikhoan_nguoidung.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiencocphong_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiencocphong_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiennuoc_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiennuoc_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tienphongconlai_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tienphongconlai_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiencocphong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiencocphong.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiennuoc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiennuoc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tienphongconlai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tienphongconlai.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiencocphong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiencocphong.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiennuoc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiennuoc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_tienphongconlai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tienphongconlai.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_trang_canhan_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_trang_canhan_nguoidung.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_nguoidung.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/ds_tiencocphong_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tiencocphong_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/ds_tiennuoc_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tiennuoc_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/ds_tienphongconlai_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tienphongconlai_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_2loai_tienphong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_2loai_tienphong.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,19 +59,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "android.gradle.sync.needed": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/backup/BTL-Android---Quanlitro/src/main/java/com/example/appquanlitro"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/backup/BTL-Android---Quanlitro/src/main/java/com/example/appquanlitro&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\backup\BTL-Android---Quanlitro\src\main\java\com\example\appquanlitro" />

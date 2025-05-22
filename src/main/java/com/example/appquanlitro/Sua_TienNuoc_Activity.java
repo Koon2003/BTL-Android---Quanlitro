@@ -62,18 +62,7 @@ public class Sua_TienNuoc_Activity extends AppCompatActivity {
         tongtien.setText(tongtien1);
         trangthai.setText(trangthai1);
 
-        // Xử lý sự kiện để tính tổng tiền
-        sokhoitieuthu.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!hasFocus) {
-                calculateTotal();
-            }
-        });
 
-        giatien.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!hasFocus) {
-                calculateTotal();
-            }
-        });
 
         // Xử lý sự kiện nút chọn trạng thái
         trangthai.setOnClickListener(v -> showTrangThaiDialog());
@@ -106,17 +95,6 @@ public class Sua_TienNuoc_Activity extends AppCompatActivity {
         datePickerDialog.getDatePicker().setSpinnersShown(true);
 
         datePickerDialog.show();
-    }
-
-    private void calculateTotal() {
-        try {
-            int soKhoa = Integer.parseInt(sokhoitieuthu.getText().toString());
-            int giaTien = Integer.parseInt(giatien.getText().toString());
-            int tongTien = soKhoa * giaTien;
-            tongtien.setText(String.valueOf(tongTien));
-        } catch (NumberFormatException e) {
-            tongtien.setText("0");
-        }
     }
 
     private void updateTienNuoc() {

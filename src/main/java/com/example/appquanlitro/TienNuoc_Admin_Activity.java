@@ -35,28 +35,14 @@ public class TienNuoc_Admin_Activity extends AppCompatActivity {
         database = new Database(this, "quanlitro.db", null, 1);
         database.QueryData("CREATE TABLE IF NOT EXISTS tiennuoc (idnuoc INTEGER PRIMARY KEY AUTOINCREMENT,  id INTEGER, dongtiennuocthangnam TEXT, sokhoitieuthu TEXT, giatien TEXT, tongtien TEXT, trangthai TEXT)");
 
-        // Tải dữ liệu từ database
+
+
         loadData();
 
-        // Thiết lập sự kiện click cho nút thêm
         add.setOnClickListener(view -> {
             Intent intent = new Intent(TienNuoc_Admin_Activity.this, Them_TienNuoc_Activity.class);
             startActivity(intent);
         });
-
-        // Xử lý sự kiện click item trong ListView
-//        lv.setOnItemClickListener((parent, view, position, id) -> {
-//            TienNuoc selectedRoom = list.get(position);
-//            Intent intent = new Intent(TienNuoc_Admin_Activity.this, Sua_TienNuoc_Activity.class);
-//            intent.putExtra("idnuoc", selectedRoom.getIdnuoc());
-//            intent.putExtra("id", selectedRoom.getId());
-//            intent.putExtra("dongtiennuocthangnam", selectedRoom.getDongtiennuocthangnam());
-//            intent.putExtra("sokhoitieuthu", selectedRoom.getSokhoitieuthu());
-//            intent.putExtra("giatien", selectedRoom.getGiatien());
-//            intent.putExtra("tongtien", selectedRoom.getTongtien());
-//            intent.putExtra("trangthai", selectedRoom.getTrangthai());
-//            startActivity(intent);
-//        });
     }
 
     @Override
@@ -84,6 +70,6 @@ public class TienNuoc_Admin_Activity extends AppCompatActivity {
             list.add(tienPhong);
         }
         dataPhongTro.close();
-        adapter.notifyDataSetChanged(); // Cập nhật giao diện ListView
+        adapter.notifyDataSetChanged();
     }
 }

@@ -24,7 +24,7 @@ import java.util.List;
 public class Them_TienPhongConLai_Activity extends AppCompatActivity {
 
     private Database database;
-EditText edtMahoso, edtHovaten, edtTrangthai, edtSoTienConLai;
+    EditText edtMahoso, edtHovaten, edtTrangthai, edtSoTienConLai;
     private TextView txtIdPhong, txtGiaTien, txtCccd, txtNgaySinh, txtSdt;
     private Button btnSave, btnHuy;
 
@@ -36,6 +36,7 @@ EditText edtMahoso, edtHovaten, edtTrangthai, edtSoTienConLai;
         // Khởi tạo database
         database = new Database(this, "quanlitro.db", null, 1);
         database.QueryData("CREATE TABLE IF NOT EXISTS tienphongconlai (maidtienconlai INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT,  sotienconlai TEXT,trangthai TEXT)");
+
 
         // Ánh xạ view
         edtMahoso = findViewById(R.id.mahoso);

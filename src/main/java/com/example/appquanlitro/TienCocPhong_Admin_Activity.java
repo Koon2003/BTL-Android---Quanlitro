@@ -30,7 +30,6 @@ public class TienCocPhong_Admin_Activity extends AppCompatActivity {
         lv.setAdapter(adapter);
 
         database = new Database(this, "quanlitro.db", null, 1);
-
         database.QueryData("CREATE TABLE IF NOT EXISTS tiencocphong (maidcoc INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT, hinhthuccoc TEXT, sotiendanopcoc TEXT, sotienconlai TEXT)");
 
         // Tải dữ liệu từ database
@@ -41,26 +40,6 @@ public class TienCocPhong_Admin_Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Xử lý sự kiện click item trong ListView
-        lv.setOnItemClickListener((parent, view, position, id) -> {
-            TienCocPhong selectedRoom = List.get(position);
-            Intent intent = new Intent(TienCocPhong_Admin_Activity.this, Sua_TienCocPhong_Activity.class);
-
-            // Truyền dữ liệu qua Intent
-            intent.putExtra("maidcoc", selectedRoom.getMaidcoc());
-            intent.putExtra("mahoso", selectedRoom.getMahoso());
-            intent.putExtra("id", selectedRoom.getId());
-            intent.putExtra("giatien", selectedRoom.getGiatien());
-            intent.putExtra("hovaten", selectedRoom.getHovaten());
-            intent.putExtra("ngaysinh", selectedRoom.getNgaysinh());
-            intent.putExtra("cccd", selectedRoom.getCccdnguoinop());
-            intent.putExtra("sdt", selectedRoom.getSdt());
-            intent.putExtra("hinhthuccoc", selectedRoom.getHinhthuccoc());
-            intent.putExtra("sotiendanopcoc", selectedRoom.getSotiendanopcoc());
-            intent.putExtra("sotienconlai", selectedRoom.getSotienconlai());
-
-            startActivity(intent);
-        });
     }
 
     @Override

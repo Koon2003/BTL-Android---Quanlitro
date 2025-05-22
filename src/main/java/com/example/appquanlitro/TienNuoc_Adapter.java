@@ -45,8 +45,6 @@ public class TienNuoc_Adapter extends BaseAdapter {
         return position;
     }
 
-    private int clickCount = 0; // Biến đếm số lần nhấn
-    private boolean areButtonsVisible = false; // Biến trạng thái hiển thị
 
     public View getView(int i, View convertView, ViewGroup parent) {
         if (convertView == null) {
@@ -87,44 +85,20 @@ public class TienNuoc_Adapter extends BaseAdapter {
                 trangthai.setTextColor(Color.BLUE); // Màu đen
                 trangthai.setTypeface(null, Typeface.BOLD); // Chữ in đậm
                 break;
-
         }
-        sua.setVisibility(View.GONE);
-        xoa.setVisibility(View.GONE);
 
-// Xử lý sự kiện khi nhấn vào item
         convertView.setOnClickListener(v -> {
-            clickCount++;
 
-            // Reset clickCount nếu không có nhấn thêm sau 800ms
-            new android.os.Handler().postDelayed(() -> {
-                if (clickCount == 1) {
-                    // Xử lý sự kiện nhấn một lần
-                    Intent intent = new Intent(context, HienThi_TienNuoc_Admin_Activity.class);
-                    intent.putExtra("idnuoc", phongTro.getIdnuoc());
-                    intent.putExtra("id", phongTro.getId());
-                    intent.putExtra("dongtiennuocthangnam", phongTro.getDongtiennuocthangnam());
-                    intent.putExtra("sokhoitieuthu", phongTro.getSokhoitieuthu());
-                    intent.putExtra("giatien", phongTro.getGiatien());
-                    intent.putExtra("tongtien", phongTro.getTongtien());
-                    intent.putExtra("trangthai", phongTro.getTrangthai());
-
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent);
-                } else if (clickCount == 2) {
-                    // Xử lý sự kiện nhấn hai lần
-                    if (!areButtonsVisible) {
-                        xoa.setVisibility(View.VISIBLE);
-                        sua.setVisibility(View.VISIBLE);
-                        areButtonsVisible = true;
-                    } else {
-                        xoa.setVisibility(View.GONE);
-                        sua.setVisibility(View.GONE);
-                        areButtonsVisible = false;
-                    }
-                }
-                clickCount = 0; // Reset lại biến đếm sau khi xử lý
-            }, 800);
+            Intent intent = new Intent(context, HienThi_TienNuoc_Admin_Activity.class);
+            intent.putExtra("idnuoc", phongTro.getIdnuoc());
+            intent.putExtra("id", phongTro.getId());
+            intent.putExtra("dongtiennuocthangnam", phongTro.getDongtiennuocthangnam());
+            intent.putExtra("sokhoitieuthu", phongTro.getSokhoitieuthu());
+            intent.putExtra("giatien", phongTro.getGiatien());
+            intent.putExtra("tongtien", phongTro.getTongtien());
+            intent.putExtra("trangthai", phongTro.getTrangthai());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
         });
 
         // Sửa

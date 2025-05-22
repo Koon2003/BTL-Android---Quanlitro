@@ -44,9 +44,6 @@ public class TienPhongConLai_Adapter extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
-    private int clickCount = 0; // Biến đếm số lần nhấn
-    private boolean areButtonsVisible = false; // Biến trạng thái hiển thị
-
 
     public View getView(int i, View convertView, ViewGroup parent) {
         if (convertView == null) {
@@ -95,44 +92,23 @@ public class TienPhongConLai_Adapter extends BaseAdapter {
                 break;
 
         }
-        xoa.setVisibility(View.GONE);
-        sua.setVisibility(View.GONE);
-// Xử lý sự kiện khi nhấn vào item
+
         convertView.setOnClickListener(v -> {
-            clickCount++;
+            Intent intent = new Intent(context, HienThi_TienPhongConLai_Admin_Activity.class);
+            intent.putExtra("maidtienconlai", phongTro.getMaidtienconlai());
+            intent.putExtra("mahoso", phongTro.getMahoso());
+            intent.putExtra("id", phongTro.getId());
+            intent.putExtra("giatien", phongTro.getGiatien());
+            intent.putExtra("hovaten", phongTro.getHovaten());
+            intent.putExtra("ngaysinh", phongTro.getNgaysinh());
+            intent.putExtra("cccdnguoinop", phongTro.getCccdnguoinop());
+            intent.putExtra("sdt", phongTro.getSdt());
+            intent.putExtra("sotienconlai", phongTro.getSotienconlaiphaidong());
+            intent.putExtra("trangthai", phongTro.getTrangthai());
 
-            // Reset clickCount nếu không có nhấn thêm sau 800ms
-            new android.os.Handler().postDelayed(() -> {
-                if (clickCount == 1) {
-                    // Xử lý sự kiện nhấn một lần
-                    Intent intent = new Intent(context, HienThi_TienPhongConLai_Admin_Activity.class);
-                    intent.putExtra("maidtienconlai", phongTro.getMaidtienconlai());
-                    intent.putExtra("mahoso", phongTro.getMahoso());
-                    intent.putExtra("id", phongTro.getId());
-                    intent.putExtra("giatien", phongTro.getGiatien());
-                    intent.putExtra("hovaten", phongTro.getHovaten());
-                    intent.putExtra("ngaysinh", phongTro.getNgaysinh());
-                    intent.putExtra("cccdnguoinop", phongTro.getCccdnguoinop());
-                    intent.putExtra("sdt", phongTro.getSdt());
-                    intent.putExtra("sotienconlai", phongTro.getSotienconlaiphaidong());
-                    intent.putExtra("trangthai", phongTro.getTrangthai());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
 
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent);
-                } else if (clickCount == 2) {
-                    // Xử lý sự kiện nhấn hai lần
-                    if (!areButtonsVisible) {
-                        xoa.setVisibility(View.VISIBLE);
-                        sua.setVisibility(View.VISIBLE);
-                        areButtonsVisible = true;
-                    } else {
-                        xoa.setVisibility(View.GONE);
-                        sua.setVisibility(View.GONE);
-                        areButtonsVisible = false;
-                    }
-                }
-                clickCount = 0; // Reset lại biến đếm sau khi xử lý
-            }, 800);
         });
 
         // Sửa

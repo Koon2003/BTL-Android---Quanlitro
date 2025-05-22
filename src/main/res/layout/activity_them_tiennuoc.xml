@@ -30,7 +30,7 @@
         android:layout_marginTop="3dp"
 
         android:background="#F6B2C4"
-        android:padding="16dp"> <!-- Đặt ScrollView bên dưới LinearLayout -->
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             <EditText
                 android:id="@+id/id"
                 android:layout_width="match_parent"
-android:focusableInTouchMode="false"
+                android:focusableInTouchMode="false"
                 android:layout_height="50dp"
                 android:background="@drawable/edittext"
                 android:hint="Phòng đóng tiền nước"
@@ -118,9 +118,8 @@ android:focusableInTouchMode="false"
                 android:id="@+id/tongtien"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:focusableInTouchMode="false"
+                android:inputType="number"
                 android:background="@drawable/edittext"
-
                 android:hint="Tổng tiền thanh toán"
                 android:paddingLeft="10dp" />
 

@@ -42,24 +42,11 @@ public class Them_TienNuoc_Activity extends AppCompatActivity {
         database = new Database(this, "quanlitro.db", null, 1);
         database.QueryData("CREATE TABLE IF NOT EXISTS tiennuoc (idnuoc INTEGER PRIMARY KEY AUTOINCREMENT, id INTEGER, dongtiennuocthangnam TEXT, sokhoitieuthu TEXT, giatien TEXT, tongtien TEXT, trangthai TEXT)");
 
-        // Xử lý sự kiện để tính tổng tiền
-        sokhoitieuthu.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!hasFocus) {
-                calculateTotal();
-            }
-        });
-
-        giatien.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!hasFocus) {
-                calculateTotal();
-            }
-        });
 
         // Xử lý sự kiện nút chọn trạng thái
         trangthai.setOnClickListener(v -> showTrangThaiDialog());
 
         btnAdd.setOnClickListener(view -> {
-            // Xử lý lưu dữ liệu
             addTienNuoc();
         });
 
@@ -96,17 +83,6 @@ public class Them_TienNuoc_Activity extends AppCompatActivity {
         datePickerDialog.show();
     }
 
-    private void calculateTotal() {
-        try {
-            int soKWtieuThu = Integer.parseInt(sokhoitieuthu.getText().toString());
-            int giaTien = Integer.parseInt(giatien.getText().toString());
-            int tongTien = soKWtieuThu * giaTien;
-            tongtien.setText(String.valueOf(tongTien));
-        } catch (NumberFormatException e) {
-            // Xử lý khi không có giá trị hợp lệ
-            tongtien.setText("0");
-        }
-    }
 
     private void addTienNuoc() {
         // Lưu dữ liệu vào bảng tiennuoc
