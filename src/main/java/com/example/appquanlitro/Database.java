@@ -18,6 +18,44 @@ import java.util.List;
 
 public class Database extends SQLiteOpenHelper {
 
+    // Phương thức để chèn dữ liệu vào bảng phongtro
+    public void insertDataPhongTro(String tenPhong, int dienTich, String moTa, double giaTien, List<String> imagePaths) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "INSERT INTO phongtro (tenphong, dientich, mota, giatien, anh1Path, anh2Path, anh3Path, anh4Path, anh5Path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        SQLiteStatement statement = db.compileStatement(sql);
+
+        statement.bindString(1, tenPhong);
+        statement.bindLong(2, dienTich);
+        statement.bindString(3, moTa);
+        statement.bindDouble(4, giaTien);
+
+        // Gán giá trị cho các đường dẫn ảnh
+        for (int i = 0; i < 5; i++) {
+            if (i < imagePaths.size()) {
+                statement.bindString(5 + i, imagePaths.get(i));
+            } else {
+                statement.bindNull(5 + i); // Gán null nếu không có hình ảnh
+            }
+        }
+
+        statement.executeInsert();
+        db.close();
+    }
+
+    public String getTenPhongById(String idPhong) {
+        String tenPhong = "";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT tenphong FROM phongtro WHERE id = ?", new String[]{idPhong});
+
+        if (cursor.moveToFirst()) {
+            tenPhong = cursor.getString(0);
+        }
+        cursor.close();
+        db.close();
+
+        return tenPhong;
+    }
+
     public Database(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
