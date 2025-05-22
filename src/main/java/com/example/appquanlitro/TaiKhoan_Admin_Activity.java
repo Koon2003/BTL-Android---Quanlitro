@@ -46,7 +46,11 @@ public class TaiKhoan_Admin_Activity extends AppCompatActivity {
     }
 
     private void Loaddulieutaikhoan() {
-        Cursor dataPhongTro = database.GetData("SELECT * FROM taikhoan");
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String tendnAdmin = sharedPreferences.getString("tendn", null);
+
+        if (tendnAdmin == null) return; // Tránh lỗi nếu chưa đăng nhập
+        Cursor dataPhongTro = database.GetData("SELECT * FROM taikhoan WHERE tendn != '" + tendnAdmin + "'");
         List.clear();
 
         while (dataPhongTro.moveToNext()) {

@@ -64,6 +64,7 @@ public class Login_Activity extends AppCompatActivity {
 
                 if (quyen.equals("admin")) {
                     intent = new Intent(Login_Activity.this, TrangChu_Admin_Activity.class);
+                    intent.putExtra("tendn_admin", tendn);
                     Toast.makeText(this, "Đăng nhập với quyền Admin", Toast.LENGTH_SHORT).show();
                 }  else {
                     intent = new Intent(Login_Activity.this, TrangChu_NguoiDung_Activity.class);

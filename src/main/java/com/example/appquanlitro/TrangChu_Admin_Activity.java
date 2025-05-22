@@ -39,9 +39,7 @@ public class TrangChu_Admin_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(TrangChu_Admin_Activity.this, PhongTro_Admin_Activity.class);
-
                 startActivity(intent);
-
             }
         });
 
@@ -84,7 +82,6 @@ public class TrangChu_Admin_Activity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(TrangChu_Admin_Activity.this, TienPhongConLai_Admin_Activity.class);
-
                         startActivity(intent);
                         dialog.dismiss(); // Đóng Dialog
                     }
