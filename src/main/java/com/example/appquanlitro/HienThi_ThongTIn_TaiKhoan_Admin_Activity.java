@@ -52,8 +52,5 @@ public class HienThi_ThongTIn_TaiKhoan_Admin_Activity extends AppCompatActivity 
         sdt.setText(getIntent().getStringExtra("sdt"));
         quyenValue = getIntent().getStringExtra("quyen"); // Lưu giá trị quyền từ Intent
         quyen.setText(quyenValue); // Cập nhật trường quyền
-
     }
-
-
 }

@@ -44,7 +44,6 @@ public class TaiKhoan_Adapter extends BaseAdapter {
         return position;
     }
 
-
     private int clickCount = 0; // Biến đếm số lần nhấn
     private boolean areButtonsVisible = false; // Biến trạng thái hiển thị
 
@@ -67,7 +66,6 @@ public class TaiKhoan_Adapter extends BaseAdapter {
         TextView sdt = viewtemp.findViewById(R.id.sdt);
         TextView quyen = viewtemp.findViewById(R.id.quyen);
         ImageView imght = viewtemp.findViewById(R.id.img);
-
         ImageButton xoa = viewtemp.findViewById(R.id.imgxoa);
         ImageButton sua = viewtemp.findViewById(R.id.imgsua);
 
