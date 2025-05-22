@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Login_Activity extends AppCompatActivity {
@@ -32,13 +31,7 @@ public class Login_Activity extends AppCompatActivity {
         EditText mk = findViewById(R.id.mk);
         TextView dangki = findViewById(R.id.dangki);
         TextView qmk = findViewById(R.id.qmk);
-        qmk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), DoiMatKhau_TaiKhoan_NguoiDung_Activity.class);
-                startActivity(intent);
-            }
-        });
+
         database = new Database(this, "quanlitro.db", null, 1);
 
         // Chuyển đến activity đăng ký tài khoản
@@ -71,6 +64,7 @@ public class Login_Activity extends AppCompatActivity {
 
                 if (quyen.equals("admin")) {
                     intent = new Intent(Login_Activity.this, TrangChu_Admin_Activity.class);
+                    intent.putExtra("tendn_admin", tendn);
                     Toast.makeText(this, "Đăng nhập với quyền Admin", Toast.LENGTH_SHORT).show();
                 }  else {
                     intent = new Intent(Login_Activity.this, TrangChu_NguoiDung_Activity.class);

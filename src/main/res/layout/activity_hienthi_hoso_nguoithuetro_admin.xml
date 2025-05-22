@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6B2C4">
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/maid"
+        android:layout_height="0dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#FF0057"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:id="@+id/titleLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin hồ sơ thuê trọ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleLayout"
+        android:layout_marginTop="3dp"
+
+        android:background="#FFFFFF"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="63dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Mã Hồ Sơ"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/mahoso"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Mã hồ sơ"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="CCCD"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/cccd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="CCCD"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Họ và tên: "
+                        android:textColor="#000000"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/hovaten"
+                        android:text=" ten"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="#FF1100"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Ngày sinh:"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ngaysinh"
+                        android:text=" dd/MM/yyyy"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Quê quán:"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/quequan"
+                        android:text=" quê quán"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Sđt:"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/sdt"
+                        android:text=" sdt"
+                        android:textColor="#001795"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Phòng muốn thuê"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Phòng thuê"
+                android:focusableInTouchMode="false"
+
+                android:paddingLeft="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Tiền thuê phòng / tháng"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/giatien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Tiền phòng thuê / tháng"
+                android:focusableInTouchMode="false"
+
+                android:paddingLeft="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Hình thức thuê"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/hinhthucthue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Hình thức thuê"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Ngày bắt đầu trọ"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ngaybatdauthue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="ngày bắt đầu trọ"
+                android:focusableInTouchMode="false"
+
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Ngày kết thúc"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ngayketthucthue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:focusableInTouchMode="false"
+                android:hint="Ngày kết thúc"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Trạng thái hợp đồng"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/trangthai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/edittext"
+                android:hint="Trạng Thai Hợp Đồng"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="10dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
