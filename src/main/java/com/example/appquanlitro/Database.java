@@ -114,12 +114,30 @@ public class Database extends SQLiteOpenHelper {
         return rowsDeleted; // Trả về số hàng đã xóa
     }
 
-    public int deletetienTienNuoc(String tendn) {
+    public int deletetienTienNuoc(String idnuoc) {
         SQLiteDatabase db = this.getWritableDatabase();
-        int rowsDeleted = db.delete("tiendnuoc", "idnuoc = ?", new String[]{tendn});
+        int rowsDeleted = db.delete("tiennuoc", "idnuoc = ?", new String[]{idnuoc});
         db.close();
         return rowsDeleted; // Trả về số hàng đã xóa
     }
+
+    public int deleteAllTienNuoc() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = 0;
+        try {
+            db.beginTransaction();
+            rowsDeleted = db.delete("tiennuoc", null, null);
+            db.setTransactionSuccessful();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            db.endTransaction();
+            db.close();
+        }
+        return rowsDeleted;
+    }
+
+
     public String getTenPhongById(String idPhong) {
         String tenPhong = "";
         SQLiteDatabase db = this.getReadableDatabase();

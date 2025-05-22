@@ -120,6 +120,8 @@ public class TienNuoc_Adapter extends BaseAdapter {
         xoa.setOnClickListener(v -> {
             Toast.makeText(context, "Bạn đã nhấn nút xóa", Toast.LENGTH_SHORT).show();
             int rowsDeleted = database.deletetienTienNuoc(phongTro.getIdnuoc());
+//            int rowsDeleted = database.deleteAllTienNuoc();
+
 
             if (rowsDeleted > 0) {
                 listPhongTro.remove(i);
