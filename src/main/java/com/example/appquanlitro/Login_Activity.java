@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Login_Activity extends AppCompatActivity {
@@ -32,13 +31,7 @@ public class Login_Activity extends AppCompatActivity {
         EditText mk = findViewById(R.id.mk);
         TextView dangki = findViewById(R.id.dangki);
         TextView qmk = findViewById(R.id.qmk);
-        qmk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), DoiMatKhau_TaiKhoan_NguoiDung_Activity.class);
-                startActivity(intent);
-            }
-        });
+
         database = new Database(this, "quanlitro.db", null, 1);
 
         // Chuyển đến activity đăng ký tài khoản
