@@ -24,7 +24,7 @@ import java.util.List;
 public class Them_TienPhongConLai_Activity extends AppCompatActivity {
 
     private Database database;
-    EditText edtMahoso, edtHovaten, edtTrangthai, edtSoTienConLai;
+EditText edtMahoso, edtHovaten, edtTrangthai, edtSoTienConLai;
     private TextView txtIdPhong, txtGiaTien, txtCccd, txtNgaySinh, txtSdt;
     private Button btnSave, btnHuy;
 

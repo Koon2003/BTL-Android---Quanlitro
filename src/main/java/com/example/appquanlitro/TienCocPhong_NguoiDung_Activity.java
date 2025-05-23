@@ -19,7 +19,7 @@ public class TienCocPhong_NguoiDung_Activity extends AppCompatActivity {
     private TienCocPhong_NguoiDung_Adapter adapter;
     private java.util.List<TienCocPhong> List = new ArrayList<>();
 
-    String tendn;
+String tendn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +31,8 @@ public class TienCocPhong_NguoiDung_Activity extends AppCompatActivity {
         lv.setAdapter(adapter);
 
         database = new Database(this, "quanlitro.db", null, 1);
-
         database.QueryData("CREATE TABLE IF NOT EXISTS tiencocphong (maidcoc INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT, hinhthuccoc TEXT, sotiendanopcoc TEXT, sotienconlai TEXT)");
+
         TextView textTendn=findViewById(R.id.tendn);
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         tendn = sharedPreferences.getString("tendn", null);

@@ -14,16 +14,16 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class TienNuoc_Adapter extends BaseAdapter {
+public class TienDien_Adapter extends BaseAdapter {
     private Context context;
-    private List<TienNuoc> listPhongTro;
+    private List<TienDien> listPhongTro;
     private int layout;
     Database database;
 
 
 
     // Constructor với tham số listener
-    public TienNuoc_Adapter(Context context, int layout, List<TienNuoc> listPhongTro) {
+    public TienDien_Adapter(Context context, int layout, List<TienDien> listPhongTro) {
         this.context = context;
         this.layout = layout;
         this.listPhongTro = listPhongTro;
@@ -48,26 +48,26 @@ public class TienNuoc_Adapter extends BaseAdapter {
 
     public View getView(int i, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.ds_tiennuoc_admin, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.ds_tiendien_admin, parent, false);
         }
 
-        TienNuoc phongTro = listPhongTro.get(i);
+        TienDien phongTro = listPhongTro.get(i);
 
         // Ánh xạ các TextView để hiển thị thông tin
-        TextView idnuoc= convertView.findViewById(R.id.idnuoc);
+        TextView iddien = convertView.findViewById(R.id.iddien);
         TextView idphong = convertView.findViewById(R.id.id);
-        TextView dongtiennuocthangnam = convertView.findViewById(R.id.dongtiennuocthangnam);
-        TextView sokhoitieuthu = convertView.findViewById(R.id.sokhoitieuthuc);
+        TextView dongtiendienthangnam = convertView.findViewById(R.id.dongtiendienthangnam);
+        TextView sokwtieuthu = convertView.findViewById(R.id.sokwtieuthuc);
         TextView giatien = convertView.findViewById(R.id.giatien);
         TextView tongtien = convertView.findViewById(R.id.tongtien);
         TextView trangthai = convertView.findViewById(R.id.trangthai);
 
         // Hiển thị dữ liệu từ đối tượng phongTro
-        idnuoc.setText(phongTro.getIdnuoc());
+        iddien.setText(phongTro.getIddien());
         String tenPhong = database.getTenPhongById(phongTro.getId());
         idphong.setText("Phòng: "+tenPhong);
-        dongtiennuocthangnam.setText("Tháng: "+phongTro.getDongtiennuocthangnam());
-        sokhoitieuthu.setText(phongTro.getSokhoitieuthu());
+        dongtiendienthangnam.setText("Tháng: "+phongTro.getDongtiendienthangnam());
+        sokwtieuthu.setText(phongTro.getSokwtieuthu());
         giatien.setText(phongTro.getGiatien());
         tongtien.setText("Tổng: "+phongTro.getTongtien()+" VNĐ");
         trangthai.setText(phongTro.getTrangthai());
@@ -85,29 +85,32 @@ public class TienNuoc_Adapter extends BaseAdapter {
                 trangthai.setTextColor(Color.BLUE); // Màu đen
                 trangthai.setTypeface(null, Typeface.BOLD); // Chữ in đậm
                 break;
+
         }
 
+// Xử lý sự kiện khi nhấn vào item
         convertView.setOnClickListener(v -> {
+                    Intent intent = new Intent(context, HienThi_TienDien_Admin_Activity.class);
+                    intent.putExtra("iddien", phongTro.getIddien());
+                    intent.putExtra("id", phongTro.getId());
+                    intent.putExtra("dongtiendienthangnam", phongTro.getDongtiendienthangnam());
+                    intent.putExtra("sokwtieuthu", phongTro.getSokwtieuthu());
+                    intent.putExtra("giatien", phongTro.getGiatien());
+                    intent.putExtra("tongtien", phongTro.getTongtien());
+                    intent.putExtra("trangthai", phongTro.getTrangthai());
 
-            Intent intent = new Intent(context, HienThi_TienNuoc_Admin_Activity.class);
-            intent.putExtra("idnuoc", phongTro.getIdnuoc());
-            intent.putExtra("id", phongTro.getId());
-            intent.putExtra("dongtiennuocthangnam", phongTro.getDongtiennuocthangnam());
-            intent.putExtra("sokhoitieuthu", phongTro.getSokhoitieuthu());
-            intent.putExtra("giatien", phongTro.getGiatien());
-            intent.putExtra("tongtien", phongTro.getTongtien());
-            intent.putExtra("trangthai", phongTro.getTrangthai());
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
+
         });
 
         // Sửa
         sua.setOnClickListener(v -> {
-            Intent intent = new Intent(context, Sua_TienNuoc_Activity.class);
-            intent.putExtra("idnuoc", phongTro.getIdnuoc());
+            Intent intent = new Intent(context, Sua_TienDien_Activity.class);
+            intent.putExtra("iddien", phongTro.getIddien());
             intent.putExtra("id", phongTro.getId());
-            intent.putExtra("dongtiennuocthangnam", phongTro.getDongtiennuocthangnam());
-            intent.putExtra("sokhoitieuthu", phongTro.getSokhoitieuthu());
+            intent.putExtra("dongtiendienthangnam", phongTro.getDongtiendienthangnam());
+            intent.putExtra("sokwtieuthu", phongTro.getSokwtieuthu());
             intent.putExtra("giatien", phongTro.getGiatien());
             intent.putExtra("tongtien", phongTro.getTongtien());
             intent.putExtra("trangthai", phongTro.getTrangthai());
@@ -119,7 +122,7 @@ public class TienNuoc_Adapter extends BaseAdapter {
         // Xóa
         xoa.setOnClickListener(v -> {
             Toast.makeText(context, "Bạn đã nhấn nút xóa", Toast.LENGTH_SHORT).show();
-            int rowsDeleted = database.deletetienTienNuoc(phongTro.getIdnuoc());
+            int rowsDeleted = database.deletetienTienDien(phongTro.getIddien());
 
             if (rowsDeleted > 0) {
                 listPhongTro.remove(i);
@@ -134,5 +137,6 @@ public class TienNuoc_Adapter extends BaseAdapter {
     }
 
 }
+
 
 

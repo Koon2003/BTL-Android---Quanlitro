@@ -54,7 +54,7 @@ public class Sua_TienPhongConLai_Activity extends AppCompatActivity {
         btnHuy = findViewById(R.id.btnHuy);
 
         // Nhận dữ liệu từ Intent
-        maidtienconlai = getIntent().getStringExtra("maidtienconlai");
+  maidtienconlai = getIntent().getStringExtra("maidtienconlai");
         String mahoso = getIntent().getStringExtra("mahoso");
         String idPhong = getIntent().getStringExtra("id");
         String giaTien = getIntent().getStringExtra("giatien");
@@ -75,7 +75,7 @@ public class Sua_TienPhongConLai_Activity extends AppCompatActivity {
         txtCccd.setText(cccd);
         txtNgaySinh.setText(ngaysinh);
         txtSdt.setText(sdt);
-        edtTrangThai.setText(trangthai);
+     edtTrangThai.setText(trangthai);
         edtSoTienConLai.setText(sotienconlai);
         txtmaidtienphongconlai.setText(maidtienconlai);
         // Lắng nghe thay đổi trong EditText edtMahoso

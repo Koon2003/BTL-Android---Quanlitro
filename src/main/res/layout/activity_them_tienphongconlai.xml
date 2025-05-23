@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="-30dp"
+       android:layout_marginTop="-30dp"
             android:orientation="vertical">
 
             <TextView
@@ -230,7 +230,7 @@
                 android:id="@+id/trangthai"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Chưa Đóng"
+android:text="Chưa Đóng"
                 android:background="@drawable/edittext"
                 android:hint="Chưa Đóng"
                 android:focusableInTouchMode="false"

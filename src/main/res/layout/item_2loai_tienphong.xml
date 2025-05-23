@@ -10,104 +10,104 @@
         android:orientation="vertical"
 
         >
+<TextView
+    android:layout_width="match_parent"
+    android:background="#7AF44336"
+    android:layout_height="2dp"></TextView>
+<TextView
+android:layout_width="match_parent"
+android:text="Chọn loại tiền phòng"
+android:textColor="#FFFFFF"
+android:textSize="20sp"
+android:textStyle="bold"
+android:gravity="center"
+android:textAllCaps="true"
+android:background="#06B80C"
+android:layout_height="60dp"></TextView>
+<TextView
+android:layout_width="match_parent"
+android:background="#7AF44336"
+android:layout_height="2dp"></TextView>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:orientation="horizontal">
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <!-- LinearLayout để sắp xếp TextView và ImageButton theo chiều dọc -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- TextView -->
         <TextView
-            android:layout_width="match_parent"
-            android:background="#7AF44336"
-            android:layout_height="2dp"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:text="Chọn loại tiền phòng"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textAllCaps="true"
-            android:background="#06B80C"
-            android:layout_height="60dp"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:background="#7AF44336"
-            android:layout_height="2dp"></TextView>
-        <LinearLayout
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
+            android:text="Tiền Cọc Phòng"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
 
-                <!-- LinearLayout để sắp xếp TextView và ImageButton theo chiều dọc -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+        <!-- ImageButton -->
+        <ImageButton
+            android:id="@+id/btntiencoc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/tiencoc"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
 
-                    <!-- TextView -->
-                    <TextView
+    <!-- LinearLayout để sắp xếp TextView và ImageButton theo chiều dọc -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tiền Cọc Phòng"
-                        android:textSize="15sp"
-                        android:textColor="@android:color/black"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginBottom="16dp"/>
+        <!-- TextView -->
+        <TextView
 
-                    <!-- ImageButton -->
-                    <ImageButton
-                        android:id="@+id/btntiencoc"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/tiencoc"
-                        android:layout_gravity="center_horizontal"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Phòng Còn Lại"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
 
-                <!-- LinearLayout để sắp xếp TextView và ImageButton theo chiều dọc -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+        <!-- ImageButton -->
+        <ImageButton
+            android:id="@+id/btntienconlai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/tiencocnlai"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
 
-                    <!-- TextView -->
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tiền Phòng Còn Lại"
-                        android:textSize="15sp"
-                        android:textColor="@android:color/black"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginBottom="16dp"/>
-
-                    <!-- ImageButton -->
-                    <ImageButton
-                        android:id="@+id/btntienconlai"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/tiencocnlai"
-                        android:layout_gravity="center_horizontal"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
+</LinearLayout>
     </LinearLayout>
 </RelativeLayout>

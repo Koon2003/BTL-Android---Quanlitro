@@ -44,8 +44,7 @@ public class TaiKhoan_Adapter extends BaseAdapter {
         return position;
     }
 
-    private int clickCount = 0; // Biến đếm số lần nhấn
-    private boolean areButtonsVisible = false; // Biến trạng thái hiển thị
+
 
     public View getView(int i, View view, ViewGroup viewGroup) {
         View viewtemp;
@@ -66,6 +65,7 @@ public class TaiKhoan_Adapter extends BaseAdapter {
         TextView sdt = viewtemp.findViewById(R.id.sdt);
         TextView quyen = viewtemp.findViewById(R.id.quyen);
         ImageView imght = viewtemp.findViewById(R.id.img);
+
         ImageButton xoa = viewtemp.findViewById(R.id.imgxoa);
         ImageButton sua = viewtemp.findViewById(R.id.imgsua);
 
@@ -81,52 +81,27 @@ public class TaiKhoan_Adapter extends BaseAdapter {
 
         // Kiểm tra quyền và cập nhật giao diện
         if ("admin".equalsIgnoreCase(tt.getQuyen())) {
-            imght.setImageResource(R.drawable.admin); // Hình admin
-            quyen.setTextColor(Color.RED); // Màu đỏ cho admin
+            quyen.setTextColor(Color.RED); 
         } else if ("user".equalsIgnoreCase(tt.getQuyen())) {
-            imght.setImageResource(R.drawable.user); // Hình user
             quyen.setTextColor(context.getResources().getColor(R.color.black)); // Màu đen cho user
         }
 
         // Ghi log thông tin tài khoản
         Log.d(TAG, "Hiển thị tài khoản: " + tt.getTendn());
-        sua.setVisibility(View.GONE);
-        xoa.setVisibility(View.GONE);
 
         // Xử lý sự kiện khi nhấn vào item
         viewtemp.setOnClickListener(v -> {
-            clickCount++;
-
-            // Reset clickCount nếu không có nhấn thêm sau 800ms
-            new android.os.Handler().postDelayed(() -> {
-                if (clickCount == 1) {
-                    // Xử lý sự kiện nhấn một lần
-                    Intent intent = new Intent(context, HienThi_ThongTIn_TaiKhoan_Admin_Activity.class);
-                    intent.putExtra("tendn", tt.getTendn());
-                    intent.putExtra("matkhau", tt.getMatkhau());
-                    intent.putExtra("hovaten", tt.getHovaten());
-                    intent.putExtra("ngaysinh", tt.getNgaysinh());
-                    intent.putExtra("cccd", tt.getCccd());
-                    intent.putExtra("quequan", tt.getQuequan());
-                    intent.putExtra("sdt", tt.getSdt());
-                    intent.putExtra("quyen", tt.getQuyen());
-
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent);
-                } else if (clickCount == 2) {
-                    // Xử lý sự kiện nhấn hai lần
-                    if (!areButtonsVisible) {
-                        xoa.setVisibility(View.VISIBLE);
-                        sua.setVisibility(View.VISIBLE);
-                        areButtonsVisible = true;
-                    } else {
-                        xoa.setVisibility(View.GONE);
-                        sua.setVisibility(View.GONE);
-                        areButtonsVisible = false;
-                    }
-                }
-                clickCount = 0; // Reset lại biến đếm sau khi xử lý
-            }, 800);
+            Intent intent = new Intent(context, HienThi_ThongTIn_TaiKhoan_Admin_Activity.class);
+            intent.putExtra("tendn", tt.getTendn());
+            intent.putExtra("matkhau", tt.getMatkhau());
+            intent.putExtra("hovaten", tt.getHovaten());
+            intent.putExtra("ngaysinh", tt.getNgaysinh());
+            intent.putExtra("cccd", tt.getCccd());
+            intent.putExtra("quequan", tt.getQuequan());
+            intent.putExtra("sdt", tt.getSdt());
+            intent.putExtra("quyen", tt.getQuyen());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
         });
 
         // Xử lý sự kiện cho nút Sửa

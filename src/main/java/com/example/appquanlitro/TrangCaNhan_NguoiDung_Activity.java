@@ -33,8 +33,8 @@ public class TrangCaNhan_NguoiDung_Activity extends AppCompatActivity {
         TextView quequan = findViewById(R.id.quequan);
         TextView cccd = findViewById(R.id.cccd);
         ImageButton btntiennuoc=findViewById(R.id.btntiennuoc);
+        ImageButton btntiendien=findViewById(R.id.btntiendien);
         ImageButton btntienphong=findViewById(R.id.btntienphong);
-
         // Lấy tên đăng nhập từ SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         tendn = sharedPreferences.getString("tendn", null);
@@ -54,6 +54,18 @@ public class TrangCaNhan_NguoiDung_Activity extends AppCompatActivity {
         Loaddulieutaikhoan(hovaten, ngaysinh, sdt, quequan, cccd);
 
 
+
+        btntiendien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TrangCaNhan_NguoiDung_Activity.this, TienDien_NguoiDung_Activity.class);
+
+                intent.putExtra("tendn", tendn);
+                // Khởi chạy Activity
+                startActivity(intent);
+            }
+        });
+
         btntiennuoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,8 +80,6 @@ public class TrangCaNhan_NguoiDung_Activity extends AppCompatActivity {
         btntienphong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Tạo Dialog
-                // Tạo Dialog
                 Dialog dialog = new Dialog(TrangCaNhan_NguoiDung_Activity.this);
                 dialog.setContentView(R.layout.item_2loai_tienphong); // Sử dụng layout ds_tienphong
                 dialog.setTitle("Chọn hành động");
@@ -114,6 +124,50 @@ public class TrangCaNhan_NguoiDung_Activity extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+
+
+        Button btndangxuat=findViewById(R.id.btndangxuat);
+        btndangxuat.setOnClickListener(v -> {
+            new AlertDialog.Builder(TrangCaNhan_NguoiDung_Activity.this)
+                    .setTitle("Đăng Xuất")
+                    .setMessage("Bạn có chắc chắn muốn đăng xuất?")
+                    .setPositiveButton("Có", (dialog, which) -> {
+                        // Xóa trạng thái đăng nhập
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putBoolean("isLoggedIn", false);
+                        editor.putString("tendn", null);
+                        editor.apply();
+
+                        // Quay lại Activity chính
+                        Intent intent = new Intent(getApplicationContext(), Login_Activity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish(); // Kết thúc activity
+                    })
+                    .setNegativeButton("Không", null)
+                    .show();
+        });
+    }
+    private String getXacNhanHoSo() {
+        String status = null;
+        // Truy vấn để lấy cccd dựa trên tendn trước
+        Cursor cursorCCCD = database.GetData("SELECT cccd FROM taikhoan WHERE tendn = '" + tendn + "'");
+        if (cursorCCCD != null && cursorCCCD.moveToFirst()) {
+            String cccd = cursorCCCD.getString(0); // Lấy cccd
+            cursorCCCD.close();
+
+            // Sử dụng cccd để truy vấn trạng thái xacnhanhoso
+            Cursor cursor = database.GetData("SELECT xacnhanhopdong FROM hosothuetro WHERE cccd = '" + cccd + "'");
+            if (cursor != null && cursor.moveToFirst()) {
+                status = cursor.getString(0); // Lấy trạng thái
+            }
+            if (cursor != null) {
+                cursor.close();
+            }
+        }
+        return status;
+    }
 
     private void Loaddulieutaikhoan(TextView hovaten, TextView ngaysinh, TextView sdt, TextView quequan, TextView cccd) {
         // Truy vấn dữ liệu từ bảng taikhoan dựa trên tendn

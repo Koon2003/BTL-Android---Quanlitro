@@ -30,7 +30,6 @@ public class TienCocPhong_Admin_Activity extends AppCompatActivity {
         lv.setAdapter(adapter);
 
         database = new Database(this, "quanlitro.db", null, 1);
-        database.QueryData("CREATE TABLE IF NOT EXISTS tiencocphong (maidcoc INTEGER PRIMARY KEY AUTOINCREMENT, mahoso TEXT, id INTEGER, giatien TEXT, hovaten TEXT, ngaysinh TEXT, cccdnguoinop TEXT, sdt TEXT, hinhthuccoc TEXT, sotiendanopcoc TEXT, sotienconlai TEXT)");
 
         // Tải dữ liệu từ database
         LoaddulieuTiencocphong();

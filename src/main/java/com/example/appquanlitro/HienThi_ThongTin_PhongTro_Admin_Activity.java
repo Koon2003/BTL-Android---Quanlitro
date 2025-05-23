@@ -15,10 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e2addb2806e4bcff2ad095236b81641c18b3ea39
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;

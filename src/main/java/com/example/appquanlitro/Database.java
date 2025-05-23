@@ -18,50 +18,12 @@ import java.util.List;
 
 public class Database extends SQLiteOpenHelper {
 
-    // Phương thức để chèn dữ liệu vào bảng phongtro
-    public void insertDataPhongTro(String tenPhong, int dienTich, String moTa, double giaTien, List<String> imagePaths) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        String sql = "INSERT INTO phongtro (tenphong, dientich, mota, giatien, anh1Path, anh2Path, anh3Path, anh4Path, anh5Path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        SQLiteStatement statement = db.compileStatement(sql);
-
-        statement.bindString(1, tenPhong);
-        statement.bindLong(2, dienTich);
-        statement.bindString(3, moTa);
-        statement.bindDouble(4, giaTien);
-
-        // Gán giá trị cho các đường dẫn ảnh
-        for (int i = 0; i < 5; i++) {
-            if (i < imagePaths.size()) {
-                statement.bindString(5 + i, imagePaths.get(i));
-            } else {
-                statement.bindNull(5 + i); // Gán null nếu không có hình ảnh
-            }
-        }
-
-        statement.executeInsert();
-        db.close();
-    }
-
-    public String getTenPhongById(String idPhong) {
-        String tenPhong = "";
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT tenphong FROM phongtro WHERE id = ?", new String[]{idPhong});
-
-        if (cursor.moveToFirst()) {
-            tenPhong = cursor.getString(0);
-        }
-        cursor.close();
-        db.close();
-
-        return tenPhong;
-    }
-
     public Database(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
 
-    //truy vấn không trả kết quả
+        //truy vấn không trả kết quả
     public void QueryData(String sql){
         SQLiteDatabase database=getWritableDatabase();
         database.execSQL(sql);
@@ -98,46 +60,91 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL(query, params);
     }
+    // Phương thức để chèn dữ liệu vào bảng phongtro
+    public void insertDataPhongTro(String tenPhong, int dienTich, String moTa, double giaTien, List<String> imagePaths) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "INSERT INTO phongtro (tenphong, dientich, mota, giatien, anh1Path, anh2Path, anh3Path, anh4Path, anh5Path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        SQLiteStatement statement = db.compileStatement(sql);
 
+        statement.bindString(1, tenPhong);
+        statement.bindLong(2, dienTich);
+        statement.bindString(3, moTa);
+        statement.bindDouble(4, giaTien);
 
+        // Gán giá trị cho các đường dẫn ảnh
+        for (int i = 0; i < 5; i++) {
+            if (i < imagePaths.size()) {
+                statement.bindString(5 + i, imagePaths.get(i));
+            } else {
+                statement.bindNull(5 + i); // Gán null nếu không có hình ảnh
+            }
+        }
 
+        statement.executeInsert();
+        db.close();
+    }
+
+    public void insertDataTaiKhoan(String tendn, String matkhau, String hovaten,String ngaysinh, String cccd, String quequan,String sdt,String quyen) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "INSERT INTO taikhoan (tendn, matkhau, hovaten,ngaysinh, cccd, quequan, sdt, quyen) VALUES (?,?, ?, ?, ?, ?, ?, ?)";
+        SQLiteStatement statement = db.compileStatement(sql);
+
+        statement.bindString(1, tendn);
+        statement.bindString(2, matkhau);
+        statement.bindString(3, hovaten);
+        statement.bindString(4, ngaysinh);
+        statement.bindString(5, cccd);
+        statement.bindString(6, quequan);
+        statement.bindString(7, sdt);
+        statement.bindString(8, quyen);
+
+        statement.executeInsert();
+        db.close();
+    }
+    public void deletePhongTro(String id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("phongtro", "id = ?", new String[]{id});
+        db.close();
+    }
+    // Thêm phương thức xóa nhóm sản phẩm
+    public int deleteTaiKhoan(String tendn) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete("taikhoan", "tendn = ?", new String[]{tendn});
+        db.close();
+        return rowsDeleted; // Trả về số hàng đã xóa
+    }
+
+    public int deleteHosoThueTro(String tendn) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete("hosothuetro", "maid = ?", new String[]{tendn});
+        db.close();
+        return rowsDeleted; // Trả về số hàng đã xóa
+    }
     public int deletetienCocPhong(String tendn) {
         SQLiteDatabase db = this.getWritableDatabase();
         int rowsDeleted = db.delete("tiencocphong", "maidcoc = ?", new String[]{tendn});
         db.close();
         return rowsDeleted; // Trả về số hàng đã xóa
     }
-    public int deletetienPhongConlai(String tendn) {
+    public int deletetienPhongConlai(String maidtienconlai) {
         SQLiteDatabase db = this.getWritableDatabase();
-        int rowsDeleted = db.delete("tienphongconlai", "maidtienconlai = ?", new String[]{tendn});
+        int rowsDeleted = db.delete("tienphongconlai", "maidtienconlai = ?", new String[]{maidtienconlai});
         db.close();
         return rowsDeleted; // Trả về số hàng đã xóa
     }
 
+    public int deletetienTienDien(String iddien) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete("tiendien", "iddien = ?", new String[]{iddien});
+        db.close();
+        return rowsDeleted; // Trả về số hàng đã xóa
+    }
     public int deletetienTienNuoc(String idnuoc) {
         SQLiteDatabase db = this.getWritableDatabase();
         int rowsDeleted = db.delete("tiennuoc", "idnuoc = ?", new String[]{idnuoc});
         db.close();
         return rowsDeleted; // Trả về số hàng đã xóa
     }
-
-    public int deleteAllTienNuoc() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        int rowsDeleted = 0;
-        try {
-            db.beginTransaction();
-            rowsDeleted = db.delete("tiennuoc", null, null);
-            db.setTransactionSuccessful();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            db.endTransaction();
-            db.close();
-        }
-        return rowsDeleted;
-    }
-
-
     public String getTenPhongById(String idPhong) {
         String tenPhong = "";
         SQLiteDatabase db = this.getReadableDatabase();
@@ -189,7 +196,7 @@ public class Database extends SQLiteOpenHelper {
     }
 
     public boolean themTienNopPhongCOnlai(String mahoso, String idPhong, String giaTien, String hovaten,
-                                          String ngaySinh, String cccd, String sdt, String soTienConLai,String trangthai) {
+                               String ngaySinh, String cccd, String sdt, String soTienConLai,String trangthai) {
         SQLiteDatabase db = this.getWritableDatabase();
         String sql = "INSERT INTO tienphongconlai (mahoso, id, giatien, hovaten, ngaysinh, cccdnguoinop, sdt,  sotienconlai,trangthai) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         SQLiteStatement statement = db.compileStatement(sql);

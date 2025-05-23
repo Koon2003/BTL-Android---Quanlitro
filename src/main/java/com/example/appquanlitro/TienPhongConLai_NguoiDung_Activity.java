@@ -19,7 +19,7 @@ public class TienPhongConLai_NguoiDung_Activity extends AppCompatActivity {
     private TienPhongConLai_Nguoidung_Adapter adapter;
     private ArrayList<TienPhongConLai> list = new ArrayList<>();
 
-    String tendn;
+String tendn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

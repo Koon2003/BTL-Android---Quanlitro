@@ -17,269 +17,268 @@
         android:layout_margin="16dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp">
-        <ScrollView
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingTop="24dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng Kí Tài Khoản"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="16dp"
+                android:background="#3F51B5"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tên đăng nhâp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tendn"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="24dp"
-                android:paddingBottom="10dp">
+                android:hint="Tên đăng nhập"
+                android:drawableLeft="@drawable/tdn"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Mật khẩu"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
 
-                <TextView
-                    android:id="@+id/title"
+            <EditText
+                android:id="@+id/mk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:paddingLeft="15dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:drawableLeft="@drawable/mk"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittext"
+                android:inputType="textPassword"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Nhập lại mật khẩu"
+                android:textColor="#000000"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nhaplaimk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập lại mật khẩu"
+                android:paddingLeft="15dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:drawableLeft="@drawable/mk"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittext"
+                android:inputType="textPassword"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Họ và tên"
+                android:textColor="#000000"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/hovaten"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Họ và tên"
+
+                android:layout_marginLeft="24dp"
+                android:drawableLeft="@drawable/nd"
+                android:drawablePadding="10dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginRight="24dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="CCCD"
+                android:textColor="#000000"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/cccd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="CCCD"
+                android:drawableLeft="@drawable/cccd"
+                android:drawablePadding="10dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Ngày sinh"
+                android:textColor="#000000"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/ngaysinh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="dd/MM/yyyy"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ns"
+                android:drawablePadding="10dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Quê quán"
+                android:textColor="#000000"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/quequan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:focusableInTouchMode="false"
+                android:hint="Quê quán"
+                android:drawableLeft="@drawable/vitri"
+                android:drawablePadding="10dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Số điện thoại"
+                android:textColor="#000000"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/sdt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Số điện thoại"
+                android:inputType="number"
+                android:drawableLeft="@drawable/sdt"
+                android:drawablePadding="10dp"
+                android:textColorHint="#C1C1C1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:paddingLeft="10dp" />
+
+
+            <EditText
+                android:id="@+id/quyen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đăng Kí Tài Khoản"
-                    android:fontFamily="sans-serif-medium"
-                    android:textColor="#3F51B5"
-                    android:textSize="24sp"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#0CB113"
+                    android:paddingLeft="20dp"
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="16dp"
-                    android:background="#3F51B5"
-                    android:textSize="14sp" />
 
-                <TextView
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="Đăng kí NGAY"
+                    android:textColor="#FFFFFF" />
+                <Button
+                    android:id="@+id/btnHuy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Tên đăng nhâp"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#FF0000"
+                    android:paddingLeft="20dp"
 
-                <EditText
-                    android:id="@+id/tendn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Tên đăng nhập"
-                    android:drawableLeft="@drawable/tdn"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:padding="12dp"
-                    android:drawablePadding="10dp"
-                    android:background="@drawable/edittext"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Mật khẩu"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/mk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Mật khẩu"
-                    android:paddingLeft="15dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:drawableLeft="@drawable/mk"
-                    android:padding="12dp"
-                    android:drawablePadding="10dp"
-                    android:background="@drawable/edittext"
-                    android:inputType="textPassword"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Nhập lại mật khẩu"
-                    android:textColor="#000000"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/nhaplaimk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nhập lại mật khẩu"
-                    android:paddingLeft="15dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:drawableLeft="@drawable/mk"
-                    android:padding="12dp"
-                    android:drawablePadding="10dp"
-                    android:background="@drawable/edittext"
-                    android:inputType="textPassword"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Họ và tên"
-                    android:textColor="#000000"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/hovaten"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/edittext"
-                    android:hint="Họ và tên"
-                    android:layout_marginLeft="24dp"
-                    android:drawableLeft="@drawable/nd"
-                    android:drawablePadding="10dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginRight="24dp"
-                    android:paddingLeft="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="CCCD"
-                    android:textColor="#000000"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/cccd"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/edittext"
-                    android:hint="CCCD"
-                    android:drawableLeft="@drawable/cccd"
-                    android:drawablePadding="10dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:paddingLeft="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Ngày sinh"
-                    android:textColor="#000000"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/ngaysinh"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/edittext"
-                    android:hint="dd/MM/yyyy"
-                    android:focusableInTouchMode="false"
-                    android:inputType="number"
-                    android:drawableLeft="@drawable/ns"
-                    android:drawablePadding="10dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:paddingLeft="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Quê quán"
-                    android:textColor="#000000"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/quequan"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/edittext"
-                    android:focusableInTouchMode="false"
-                    android:hint="Quê quán"
-                    android:drawableLeft="@drawable/vitri"
-                    android:drawablePadding="10dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:paddingLeft="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Số điện thoại"
-                    android:textColor="#000000"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/sdt"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/edittext"
-                    android:hint="Số điện thoại"
-                    android:inputType="number"
-                    android:drawableLeft="@drawable/sdt"
-                    android:drawablePadding="10dp"
-                    android:textColorHint="#C1C1C1"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:paddingLeft="10dp" />
-
-                <EditText
-                    android:id="@+id/quyen"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <Button
-                        android:id="@+id/btnSave"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="30dp"
-                        android:background="#0CB113"
-                        android:paddingLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:paddingRight="20dp"
-                        android:layout_marginBottom="50dp"
-                        android:text="Đăng kí NGAY"
-                        android:textColor="#FFFFFF" />
-
-                    <Button
-                        android:id="@+id/btnHuy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="30dp"
-                        android:background="#FF0000"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:layout_marginBottom="50dp"
-                        android:text="HỦY BỎ NGAY"
-                        android:textColor="#FFFFFF" />
-                        
-                </LinearLayout>
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="HỦY BỎ NGAY"
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
-        </ScrollView>
+        </LinearLayout>
+</ScrollView>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
