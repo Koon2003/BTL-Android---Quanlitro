@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6B2C4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#FF0056"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:id="@+id/titleLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm BILL Tiền điện"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleLayout"
+        android:layout_marginTop="3dp"
+
+        android:background="#F6B2C4"
+        android:padding="16dp"> <!-- Đặt ScrollView bên dưới LinearLayout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng thuê"
+
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Phòng đóng tiền điện"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Đóng tiền điện tháng/năm"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dongtiendienthangnam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Đóng tiền điện cho tháng/năm"
+             android:focusableInTouchMode="false"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Số kw tiêu thụ"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/sokwtieuthu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Số kw tiêu thu"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Giá tiền 1kw/h"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/giatien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Giá tiền 1kw/h"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Tổng Tiền Thanh Toán"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/tongtien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:inputType="number"
+                android:hint="Tổng tiền thanh toán"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Trạng Thái"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/trangthai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Trạng Thái"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#3F51B5"
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="THÊM BILL ngay"
+                    android:textColor="#FFFFFF" />
+                <Button
+                    android:id="@+id/btnHuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#FF0000"
+                    android:paddingLeft="20dp"
+
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="HỦY BỎ NGAY"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

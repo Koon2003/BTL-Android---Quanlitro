@@ -32,7 +32,6 @@ public class HienThi_ThongTIn_TaiKhoan_Admin_Activity extends AppCompatActivity 
         // Lấy dữ liệu từ Intent
         tendn = findViewById(R.id.tendn);
         matkhau = findViewById(R.id.matkhau);
-        nhaplaimatkhau = findViewById(R.id.nhaplaimatkhau);
         hovaten = findViewById(R.id.hovaten);
         cccd = findViewById(R.id.cccd);
         quequan = findViewById(R.id.quequan);
@@ -44,7 +43,6 @@ public class HienThi_ThongTIn_TaiKhoan_Admin_Activity extends AppCompatActivity 
         tendn.setText(getIntent().getStringExtra("tendn"));
         String matKhauValue = getIntent().getStringExtra("matkhau");
         matkhau.setText(matKhauValue);
-        nhaplaimatkhau.setText(matKhauValue); // Hiển thị mật khẩu trong trường nhập lại mật khẩu
         hovaten.setText(getIntent().getStringExtra("hovaten"));
         cccd.setText(getIntent().getStringExtra("cccd"));
         ngaysinh.setText(getIntent().getStringExtra("ngaysinh"));
@@ -52,5 +50,8 @@ public class HienThi_ThongTIn_TaiKhoan_Admin_Activity extends AppCompatActivity 
         sdt.setText(getIntent().getStringExtra("sdt"));
         quyenValue = getIntent().getStringExtra("quyen"); // Lưu giá trị quyền từ Intent
         quyen.setText(quyenValue); // Cập nhật trường quyền
+
     }
+
+
 }

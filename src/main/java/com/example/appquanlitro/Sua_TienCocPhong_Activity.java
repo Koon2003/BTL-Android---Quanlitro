@@ -25,7 +25,7 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
     private EditText edtMahoso, edtHovaten, edtHinhThucCoc, edtSoTienDaCoc, edtSoTienConLai;
     private TextView txtIdPhong, txtGiaTien, txtCccd, txtNgaySinh, txtSdt;
     private Button btnSave, btnHuy;
-    private String maidcoc; // ID của tiền cọc
+    private String maidcoc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
         // Khởi tạo database
         database = new Database(this, "quanlitro.db", null, 1);
 
-        // Ánh xạ view
         edtMahoso = findViewById(R.id.mahoso);
         txtIdPhong = findViewById(R.id.id);
         txtGiaTien = findViewById(R.id.giatien);
@@ -79,6 +78,7 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
 
         // Xử lý khi click nút Hủy
         btnHuy.setOnClickListener(v -> finish());
+
         // Xử lý khi click vào họ và tên
         edtHovaten.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +95,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
             }
         });
 
-
         // Xử lý khi click nút Hủy
         btnHuy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,11 +104,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
         });
     }
 
-
-
-
-
-    // Hiển thị Dialog chọn người thuê
     private void showDialogChonNguoiThue() {
         String mahoso = edtMahoso.getText().toString().trim();
         if (mahoso.isEmpty()) {
@@ -142,7 +136,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
         builder.show();
     }
 
-    // Load thông tin người thuê
     private void loadThongTinNguoiThue(String tenNguoiThue) {
         Cursor cursor = database.GetData("SELECT cccd, ngaysinh, sdt FROM hosothuetro WHERE hovaten = '" + tenNguoiThue + "'");
         if (cursor != null && cursor.moveToFirst()) {
@@ -157,7 +150,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
         }
     }
 
-    // Hiển thị Dialog chọn hình thức cọc
     private void showDialogHinhThucCoc() {
         String[] hinhThucCoc = {"Cọc 1 nửa", "Cọc tất cả"};
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -173,7 +165,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
         builder.show();
     }
 
-    // Tính toán tiền cọc và tiền còn lại
     private void tinhToanTienCoc(String hinhThuc) {
         String mahoso = edtMahoso.getText().toString().trim();
         if (mahoso.isEmpty()) {
@@ -203,7 +194,6 @@ public class Sua_TienCocPhong_Activity extends AppCompatActivity {
         }
     }
 
-    // Cập nhật thông tin tiền cọc vào database
     private void capNhatTienCoc() {
         String mahoso = edtMahoso.getText().toString().trim();
         String idPhong = txtIdPhong.getText().toString().trim();

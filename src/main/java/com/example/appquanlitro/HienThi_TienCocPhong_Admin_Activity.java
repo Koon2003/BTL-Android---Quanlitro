@@ -25,7 +25,7 @@ public class HienThi_TienCocPhong_Admin_Activity extends AppCompatActivity {
     private EditText edtMahoso, edtHovaten, edtHinhThucCoc, edtSoTienDaCoc, edtSoTienConLai;
     private TextView txtIdPhong, txtGiaTien, txtCccd, txtNgaySinh, txtSdt;
 
-    String maidcoc; // ID của tiền cọc
+ String maidcoc; // ID của tiền cọc
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Login_Activity extends AppCompatActivity {
@@ -30,7 +31,6 @@ public class Login_Activity extends AppCompatActivity {
         EditText tdn = findViewById(R.id.tendn);
         EditText mk = findViewById(R.id.mk);
         TextView dangki = findViewById(R.id.dangki);
-        TextView qmk = findViewById(R.id.qmk);
 
         database = new Database(this, "quanlitro.db", null, 1);
 
@@ -64,12 +64,12 @@ public class Login_Activity extends AppCompatActivity {
 
                 if (quyen.equals("admin")) {
                     intent = new Intent(Login_Activity.this, TrangChu_Admin_Activity.class);
-                    intent.putExtra("tendn_admin", tendn);
                     Toast.makeText(this, "Đăng nhập với quyền Admin", Toast.LENGTH_SHORT).show();
                 }  else {
                     intent = new Intent(Login_Activity.this, TrangChu_NguoiDung_Activity.class);
                     intent.putExtra("tendn", tendn); // Truyền tên đăng nhập
                     Toast.makeText(this, "Đăng nhập với quyền User", Toast.LENGTH_SHORT).show();
+
                 }
 
                 startActivity(intent);

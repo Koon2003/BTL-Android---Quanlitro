@@ -54,7 +54,7 @@
             <EditText
                 android:id="@+id/id"
                 android:layout_width="match_parent"
-                android:focusableInTouchMode="false"
+android:focusableInTouchMode="false"
                 android:layout_height="50dp"
                 android:background="@drawable/edittext"
                 android:hint="Phòng đóng tiền nước"

@@ -122,7 +122,8 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Chọn phòng");
         builder.setItems(danhSachPhong.toArray(new String[0]), (dialog, which) -> {
-            phongthue.setText(String.valueOf(danhSachId.get(which)));
+            phongthue.setText(danhSachPhong.get(which)); // Hiển thị "Tên phòng - Giá tiền VNĐ"
+            phongthue.setTag(danhSachId.get(which)); // Lưu ID phòng vào tag để xử lý khi lưu
             giatien.setText(String.valueOf(danhSachGiaTien.get(which)));
         });
         builder.show();
@@ -228,8 +229,7 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
     private void saveHoSoThueTro() {
         try {
             String cccdText = cccd.getText().toString();
-            String phongThueText = phongthue.getText().toString();
-            String ngayBatDauText = ngaybatdauthue.getText().toString();
+            String phongThueText = phongthue.getTag() != null ? phongthue.getTag().toString() : "";            String ngayBatDauText = ngaybatdauthue.getText().toString();
             String maHoSoText = mahoso.getText().toString();
 
             // Kiểm tra các trường dữ liệu
@@ -375,7 +375,6 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
             int ngayBatDauIndex = cursor.getColumnIndex("ngaybatdau");
             int hinhThucThueIndex = cursor.getColumnIndex("hinhthucthue");
 
-            // Kiểm tra xem chỉ mục có hợp lệ không
             if (phongThueIndex != -1 && ngayBatDauIndex != -1 && hinhThucThueIndex != -1) {
                 String existingPhongThue = cursor.getString(phongThueIndex);
                 String existingNgayBatDau = cursor.getString(ngayBatDauIndex);

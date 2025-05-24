@@ -40,7 +40,6 @@ public class HienThi_TienNuoc_Admin_Activity extends AppCompatActivity {
 
         // Khởi tạo database
         database = new Database(this, "quanlitro.db", null, 1);
-        database.QueryData("CREATE TABLE IF NOT EXISTS tiennuoc (idnuoc INTEGER PRIMARY KEY AUTOINCREMENT, id INTEGER, dongtiennuocthangnam TEXT, sokhoitieuthu TEXT, giatien TEXT, tongtien TEXT, trangthai TEXT)");
 
         // Nhận dữ liệu từ Intent
         String idnuoc1 = getIntent().getStringExtra("idnuoc");

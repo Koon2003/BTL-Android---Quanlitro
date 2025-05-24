@@ -8,7 +8,10 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ListView;
+
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,12 +49,9 @@ public class TaiKhoan_Admin_Activity extends AppCompatActivity {
     }
 
     private void Loaddulieutaikhoan() {
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        String tendnAdmin = sharedPreferences.getString("tendn", null);
-
-        if (tendnAdmin == null) return; // Tránh lỗi nếu chưa đăng nhập
-        Cursor dataPhongTro = database.GetData("SELECT * FROM taikhoan WHERE tendn != '" + tendnAdmin + "'");
+        Cursor dataPhongTro = database.GetData("SELECT * FROM taikhoan");
         List.clear();
+
 
         while (dataPhongTro.moveToNext()) {
             String tendn = dataPhongTro.getString(0);
@@ -62,6 +62,8 @@ public class TaiKhoan_Admin_Activity extends AppCompatActivity {
             String quequan = dataPhongTro.getString(5);
             String sdt = dataPhongTro.getString(6);
             String quyen = dataPhongTro.getString(7);
+
+
 
             // Tạo đối tượng PhongTro và thêm vào danh sách
             TaiKhoan tk = new TaiKhoan(tendn, matkhau, hovaten,ngaysinh, cccd, quequan, sdt, quyen);
