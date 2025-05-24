@@ -5,74 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08cb940d-18be-4c55-aa69-bccc55fdf97a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienDien_Admin_Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TaiKhoan_Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienDien_Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienDien_Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienDien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienDien_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienDien_Adapter_NguoiDung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienDien_Admin_Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienDien_NguoiDung_Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/age.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/bill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/cccd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/dangxuat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/datlich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/dien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/dlxp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/dx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/hlxp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/hoso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/hstt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/huylich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/huylichhen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/lichchoduyet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/lichdaduyet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/lichhuy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/loc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/lxp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/mk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/nd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/nguoidung.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/phong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/quantri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/resume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sdt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sl1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sl3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sl4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sl5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/sl6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/t.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tcbe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/td.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tdn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tkbe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tkto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/tt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/u.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/vitri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiendien_admin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_taikhoan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiendien.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_taikhoan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiendien.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_thongtin_taikhoan_nguoidung.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tiendien_admin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tiendien_nguoidung.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tiendien_admin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tiendien_nguoidung.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/slide.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/ChiTietPhongTro_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/ChiTietPhongTro_NguoiDung_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/DangKi_TaiKhoan_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/DangKi_TaiKhoan_NguoiDung_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_HoSo_NguoiThueTro_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_HoSo_NguoiThueTro_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_ThongTIn_TaiKhoan_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_ThongTIn_TaiKhoan_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_ThongTin_PhongTro_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_ThongTin_PhongTro_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienCocPhong_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienCocPhong_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienNuoc_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienNuoc_Admin_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienPhongConLai_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_TienPhongConLai_Admin_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HoSo_NguoiThueTro_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HoSo_NguoiThueTro_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Login_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Login_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/PhongTro_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/PhongTro_Admin_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TaiKhoan_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TaiKhoan_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienCocPhong_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienCocPhong_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienNuoc_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienNuoc_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienPhongConLai_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_TienPhongConLai_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TaiKhoan_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TaiKhoan_Adapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TaiKhoan_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TaiKhoan_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_HoSoNguoiThueTro_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_HoSoNguoiThueTro_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_PhongTro_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_PhongTro_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TaiKhoan_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TaiKhoan_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienCocPhong_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienCocPhong_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienNuoc_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienNuoc_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienPhongConLai_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Them_TienPhongConLai_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienCocPhong_NguoiDung_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Adapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_Admin_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienNuoc_NguoiDung_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_Admin_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TienPhongConLai_NguoiDung_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangCaNhan_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangCaNhan_NguoiDung_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_Admin_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_NguoiDung_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/TrangChu_NguoiDung_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_chi_tiet_phong_tro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_chi_tiet_phong_tro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/main.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_dangki_taikhoan_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_dangki_taikhoan_nguoidung.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_hoso_nguoithuetro_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_hoso_nguoithuetro_admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_thongtin_phongtro_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_thongtin_phongtro_admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_thongtin_taikhoan_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_thongtin_taikhoan_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiencocphong_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiencocphong_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiennuoc_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tiennuoc_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tienphongconlai_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_tienphongconlai_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hosonguoithuetro_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hosonguoithuetro_admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_phongtro_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_phongtro_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_taikhoan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_taikhoan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiencocphong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiencocphong.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiennuoc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tiennuoc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tienphongconlai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sua_tienphongconlai.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_taikhoan_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_taikhoan_admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_hosonguoithuetro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_hosonguoithuetro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_phongtro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_phongtro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_taikhoan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_taikhoan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiencocphong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiencocphong.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiennuoc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tiennuoc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_them_tienphongconlai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_them_tienphongconlai.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_tiencocphong_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tiencocphong_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_tiencocphong_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tiencocphong_nguoidung.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_tiennuoc_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tiennuoc_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_tiennuoc_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tiennuoc_nguoidung.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_tienphongconlai_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tienphongconlai_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_tienphongconlai_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_tienphongconlai_nguoidung.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_trang_canhan_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_trang_canhan_nguoidung.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_nguoidung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_trangchu_nguoidung.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/ds_tiencocphong_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tiencocphong_admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/ds_tienphongconlai_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/ds_tienphongconlai_admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_2loai_tienphong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_2loai_tienphong.xml" afterDir="false" />
@@ -104,7 +144,7 @@
     "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/New folder (2)/BTL-Android---Quanlitro/src/main/res/layout"
   }
