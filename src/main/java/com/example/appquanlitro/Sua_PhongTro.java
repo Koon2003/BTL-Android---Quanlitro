@@ -77,6 +77,28 @@ public class Sua_PhongTro extends AppCompatActivity {
         img4.setOnClickListener(v -> openImageChooser(4));
         img5.setOnClickListener(v -> openImageChooser(5));
 
+        // Bắt sự kiện nhấn giữ để xóa ảnh
+        img1.setOnLongClickListener(v -> {
+            removeImage(img1);
+            return true; // Đã xử lý sự kiện
+        });
+        img2.setOnLongClickListener(v -> {
+            removeImage(img2);
+            return true;
+        });
+        img3.setOnLongClickListener(v -> {
+            removeImage(img3);
+            return true;
+        });
+        img4.setOnLongClickListener(v -> {
+            removeImage(img4);
+            return true;
+        });
+        img5.setOnLongClickListener(v -> {
+            removeImage(img5);
+            return true;
+        });
+
         // Sự kiện cập nhật dữ liệu
         btnUpdate.setOnClickListener(view -> updateRoomData(roomId));
     }
@@ -120,7 +142,16 @@ public class Sua_PhongTro extends AppCompatActivity {
             }
         }
     }
-
+    // Hàm xóa ảnh khỏi ImageView và danh sách đường dẫn
+    private void removeImage(ImageView imageView) {
+        String path = (String) imageView.getTag();
+        if (path != null) {
+            imagePaths.remove(path); // Xóa khỏi danh sách ảnh
+        }
+        imageView.setImageResource(R.drawable.main); // Ảnh mặc định
+        imageView.setTag(null);
+        Toast.makeText(this, "Ảnh đã được xóa", Toast.LENGTH_SHORT).show();
+    }
     private void setImageViewFromPath(ImageView imageView, String imgPath) {
         if (imgPath != null && !imgPath.isEmpty()) {
             imageView.setImageURI(Uri.fromFile(new File(imgPath)));
@@ -149,6 +180,12 @@ public class Sua_PhongTro extends AppCompatActivity {
         String img3Path = (String) img3.getTag();
         String img4Path = (String) img4.getTag();
         String img5Path = (String) img5.getTag();
+
+        img1Path = (img1Path == null) ? "" : img1Path;
+        img2Path = (img2Path == null) ? "" : img2Path;
+        img3Path = (img3Path == null) ? "" : img3Path;
+        img4Path = (img4Path == null) ? "" : img4Path;
+        img5Path = (img5Path == null) ? "" : img5Path;
 
         String sql = "UPDATE phongtro SET tenphong=?, dientich=?, mota=?, giatien=?, anh1Path=?, anh2Path=?, anh3Path=?, anh4Path=?, anh5Path=? WHERE id=?";
         SQLiteDatabase db = this.openOrCreateDatabase("quanlitro.db", MODE_PRIVATE, null);
