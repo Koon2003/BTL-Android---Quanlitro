@@ -28,7 +28,7 @@ public class PhongTro_Admin_Activity extends AppCompatActivity {
 
         add = findViewById(R.id.btnAdd);
         lv = findViewById(R.id.listview);
-        adapter = new PhongTro_Adapter(getApplicationContext(), R.layout.ds_phongtro, List);
+        adapter = new PhongTro_Adapter(PhongTro_Admin_Activity.this, R.layout.ds_phongtro, List);
         lv.setAdapter(adapter);
 
         database = new Database(this, "quanlitro.db", null, 1);

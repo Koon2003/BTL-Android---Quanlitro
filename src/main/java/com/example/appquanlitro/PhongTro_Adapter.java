@@ -1,5 +1,7 @@
 package com.example.appquanlitro;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -97,7 +99,54 @@ public class PhongTro_Adapter extends BaseAdapter {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
 
+
         });
+        ImageButton sua = viewtemp.findViewById(R.id.icon_edit);
+        ImageButton xoa = viewtemp.findViewById(R.id.icon_xoa);
+        // Sửa
+        sua.setOnClickListener(v -> {
+            Intent intent = new Intent(context, Sua_PhongTro.class);
+            intent.putExtra("id", tt.getId());
+            intent.putExtra("tenphong", tt.getTenPhong());
+            intent.putExtra("dientich", tt.getDienTich());
+            intent.putExtra("mota", tt.getMoTa());
+            intent.putExtra("giatien", tt.getGiaTien());
+            intent.putExtra("anh1Path", tt.getImg1Path());
+            intent.putExtra("anh2Path", tt.getImg2Path());
+            intent.putExtra("anh3Path", tt.getImg3Path());
+            intent.putExtra("anh4Path", tt.getImg4Path());
+            intent.putExtra("anh5Path", tt.getImg5Path());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+
+        });
+
+        // Xóa
+        xoa.setOnClickListener(v -> {
+            if (context instanceof Activity) {
+                new AlertDialog.Builder((Activity) context)
+                        .setTitle("Xác nhận xóa")
+                        .setMessage("Bạn có chắc muốn xóa phòng này không?")
+                        .setPositiveButton("OK", (dialog, which) -> {
+                            int rowsDeleted = database.deletePhongTro(tt.getId());
+
+                            if (rowsDeleted > 0) {
+                                List.remove(i);
+                                notifyDataSetChanged();
+                                Toast.makeText(context, "Đã xóa phòng trọ thành công!", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(context, "Không tìm thấy phòng trọ để xóa.", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setNegativeButton("Hủy", (dialog, which) -> dialog.dismiss())
+                        .show();
+            } else {
+                Toast.makeText(context, "Không thể hiển thị hộp thoại xác nhận (context không hợp lệ)", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
 
         return viewtemp;
     }
