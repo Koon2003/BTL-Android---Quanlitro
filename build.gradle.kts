@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    alias(pullibs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
 }
 
 android {
