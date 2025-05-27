@@ -174,6 +174,11 @@ public class Sua_PhongTro extends AppCompatActivity {
             return;
         }
 
+        if (isTenPhongExists(tenPhong)) {
+            Toast.makeText(this, "Tên phòng đã tồn tại!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // Lấy đường dẫn ảnh từ ImageView
         String img1Path = (String) img1.getTag();
         String img2Path = (String) img2.getTag();
@@ -209,6 +214,14 @@ public class Sua_PhongTro extends AppCompatActivity {
         if (result != 0) finish();
     }
 
+    private boolean isTenPhongExists(String tenPhong) {
+        SQLiteDatabase db = this.openOrCreateDatabase("quanlitro.db", MODE_PRIVATE, null);
+        Cursor cursor = db.rawQuery("SELECT id FROM phongtro WHERE tenphong = ?", new String[]{tenPhong});
+        boolean exists = cursor.getCount() > 0;
+        cursor.close();
+        db.close();
+        return exists;
+    }
     private String getFileNameFromUri(Uri uri) {
         String result = null;
         try (Cursor cursor = getContentResolver().query(uri, null, null, null, null)) {

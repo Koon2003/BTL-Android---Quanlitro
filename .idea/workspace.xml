@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="08cb940d-18be-4c55-aa69-bccc55fdf97a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_HoSo_NguoiThueTro_Admin_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HienThi_HoSo_NguoiThueTro_Admin_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HoSo_NguoiThueTro_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/HoSo_NguoiThueTro_Adapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_PhongTro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appquanlitro/Sua_PhongTro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_hoso_nguoithuetro_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hienthi_hoso_nguoithuetro_admin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -49,7 +49,7 @@ public class HienThi_HoSo_NguoiThueTro_Admin_Activity extends AppCompatActivity 
         cccd.setText(getIntent().getStringExtra("cccd"));
         quequan.setText(getIntent().getStringExtra("quequan"));
         sdt.setText(getIntent().getStringExtra("sdt"));
-        phongthue.setText(getIntent().getStringExtra("id"));
+        phongthue.setText(getIntent().getStringExtra("tenphong"));
         giatien.setText(getIntent().getStringExtra("giatien"));
         hinhthucthue.setText(getIntent().getStringExtra("hinhthucthue"));
         ngaybatdauthue.setText(getIntent().getStringExtra("ngaybatdau"));

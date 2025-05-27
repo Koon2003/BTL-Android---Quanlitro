@@ -130,7 +130,7 @@ public class HoSo_NguoiThueTro_Adapter extends BaseAdapter {
                     intent.putExtra("cccd", phongTro.getCccd());
                     intent.putExtra("quequan", phongTro.getQuequan());
                     intent.putExtra("sdt", phongTro.getSdt());
-                    intent.putExtra("id", phongTro.getId());
+                    intent.putExtra("tenphong", database.getTenPhongById(phongTro.getId()));
                     intent.putExtra("giatien", phongTro.getGiatien());
                     intent.putExtra("hinhthucthue", phongTro.getHinhthucthue());
                     intent.putExtra("ngaybatdau", phongTro.getNgaybatdau());
