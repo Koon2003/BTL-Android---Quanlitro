@@ -79,7 +79,6 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {}
         });
 
-        trangthai.setOnClickListener(view -> showTrangThaiThueTro());
 
         // Xử lý sự kiện chọn ngày bắt đầu thuê
         ngaybatdauthue.setOnClickListener(v -> showDatePicker());
@@ -177,8 +176,12 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
             calculateEndDate(formattedDate);
         }, year, month, day);
 
+        // 🔒 Chỉ cho phép chọn ngày từ hôm nay trở đi
+        datePickerDialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
+
         datePickerDialog.show();
     }
+
 
     // Hiển thị dialog chọn hình thức thuê
     private void showHinhThucThueDialog() {
@@ -192,15 +195,7 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
         builder.show();
     }
 
-    private void showTrangThaiThueTro() {
-        final String[] trangThai = {"Đang thuê", "Hết Hợp Đồng"};
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Chọn trạng thái thuê");
 
-        builder.setItems(trangThai, (dialog, which) -> trangthai.setText(trangThai[which]));
-
-        builder.show();
-    }
 
     // Tính toán ngày kết thúc thuê
     private void calculateEndDate(String startDate) {
@@ -292,8 +287,7 @@ public class Them_HoSoNguoiThueTro_Activity extends AppCompatActivity {
                     giatien.getText().toString() + "', '" +
                     hinhthucthue.getText().toString() + "', '" +
                     ngayBatDauText + "', '" +
-                    ngayketthucthue.getText().toString() + "', 'Khách Đã Xác Nhận', '" +
-                    trangthai.getText().toString() + "');");
+                    ngayketthucthue.getText().toString() + "', 'Khách Đã Xác Nhận', 'Đang thuê');");
 
             Toast.makeText(this, "Thêm hồ sơ thành công", Toast.LENGTH_SHORT).show();
             finish();

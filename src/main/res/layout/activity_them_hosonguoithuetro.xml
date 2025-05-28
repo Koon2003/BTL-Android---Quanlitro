@@ -245,22 +245,6 @@ android:focusableInTouchMode="false"
                 android:background="@drawable/edittext"
                 android:hint="Ngày kết thúc"
                 android:paddingLeft="10dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:text="Trạng thái hợp đồng"
-                android:textColor="#000000"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/trangthai"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/edittext"
-                android:hint="Trạng Thai Hợp Đồng"
-                android:focusableInTouchMode="false"
-                android:paddingLeft="10dp" />
 
 
             <LinearLayout
